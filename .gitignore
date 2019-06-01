@@ -9,3 +9,6 @@
 /build
 /captures
 .externalNativeBuild
+
+### for hyejin ###
+.idea/misc.xml
