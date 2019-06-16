@@ -2,9 +2,9 @@
 <RelativeLayout android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:android="http://schemas.android.com/apk/res/android">
-    <RelativeLayout android:layout_width="345dp"
+    <RelativeLayout android:layout_width="370dp"
         android:layout_centerInParent="true"
-        android:layout_height="535dp"
+        android:layout_height="620dp"
         android:background="@drawable/textline"
         xmlns:android="http://schemas.android.com/apk/res/android">
         <TextView

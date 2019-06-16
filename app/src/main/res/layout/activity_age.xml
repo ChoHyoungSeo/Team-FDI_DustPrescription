@@ -4,9 +4,9 @@
     android:layout_height="match_parent">
     <RelativeLayout
         android:background="@drawable/textline"
-        android:layout_width="345dp"
+        android:layout_width="370dp"
         android:layout_centerInParent="true"
-        android:layout_height="535dp">
+        android:layout_height="610dp">
     <TextView
         android:id="@+id/age"
         android:textSize="42dp"
