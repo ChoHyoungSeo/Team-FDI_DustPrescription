@@ -14,7 +14,7 @@
         android:layout_centerHorizontal="true"
         android:layout_below="@id/sex"
         android:id="@+id/select_sex"
-        android:entries="@array/sex"
+        android:entries="@array/sex_selet"
         android:spinnerMode="dropdown"
         android:layout_width="wrap_content"
         android:layout_height="50dp"></Spinner>
