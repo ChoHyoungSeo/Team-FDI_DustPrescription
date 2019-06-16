@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+        <LinearLayout
+            android:id="@+id/grape"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:background="@color/colorPrimary"></LinearLayout>
+        <ImageView
+            android:id="@+id/character"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_below="@id/grape"
+            android:background="@drawable/cat"/>
+        <TextView
+            android:layout_marginBottom="5dp"
+            android:id="@+id/Text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="나의 인식도"
+            android:textSize="30dp"
+            android:layout_below="@id/character"/>
+        <ProgressBar
+            android:layout_margin="8dp"
+            android:id="@+id/my_head"
+            android:layout_below="@id/Text"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:progress="25"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+    </RelativeLayout>
+</ScrollView>
