@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar">
-        <activity android:name=".Age"></activity>
+        <activity android:name=".Age" />
+        <activity android:name=".First"></activity>
     </application>
 
 </manifest>
