@@ -4,6 +4,9 @@
     android:background="@drawable/quest"
     xmlns:android="http://schemas.android.com/apk/res/android">
     <ImageView
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="7dp"
+        android:background="@drawable/water"
         android:layout_width="60dp"
         android:layout_height="50dp" />
     <TextView
