@@ -14,13 +14,35 @@
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
             android:text="성별"/>
-        <Spinner
-            android:layout_centerHorizontal="true"
-            android:layout_below="@id/sex"
-            android:id="@+id/select_sex"
-            android:entries="@array/sex_selet"
-            android:spinnerMode="dropdown"
-            android:layout_width="wrap_content"
-            android:layout_height="50dp"/>
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_below="@id/sex">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:id="@+id/sexWoman"
+                android:text="여자"
+                android:textSize="20dp"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/sexMan"
+                android:text="남자"
+                android:textSize="20dp"/>
+        </RadioGroup>
+        <!--<Spinner-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:layout_below="@id/sex"-->
+            <!--android:id="@+id/select_sex"-->
+            <!--android:entries="@array/sex_selet"-->
+            <!--android:spinnerMode="dropdown"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="50dp"/>-->
     </RelativeLayout>
 </RelativeLayout>
