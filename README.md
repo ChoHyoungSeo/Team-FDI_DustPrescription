@@ -41,6 +41,6 @@ Nowadays people are ignorant of Fine Dust.
 
 
 ## License
-GNU General Public License (GPLv2)
+GNU General Public License (GPLv3)
 <br/>
-GNU 2.0 © [ChoHyoungSeo]() / [Team-FDI]()
+GNU 3.0 © [Team-FDI](https://github.com/ChoHyoungSeo/Team-FDI_DustDescription)
