@@ -10,20 +10,20 @@
 
 
 ## Building Role 1 
-PM: ChoHyoungSeo
-<br>
-PLAN: KimMinJi, KimYuBin, AhnSeonYoung, LeeHyeJin, ChoHyoungSeo
-<br>
-Design: KimMinJi, KimYuBin, AhnSeonYoung, LeeHyeJin, ChoHyoungSeo
-<br>
-FRONT-END: KimMinJi, AhnSeonYoung, LeeHyeJin
-<br>
-BACK-END: KimYuBin, ChoHyoungSeo
+* PM: ChoHyoungSeo
+
+* PLAN: KimMinJi, KimYuBin, AhnSeonYoung, LeeHyeJin, ChoHyoungSeo
+
+* Design: KimMinJi, KimYuBin, AhnSeonYoung, LeeHyeJin, ChoHyoungSeo
+
+* FRONT-END: KimMinJi, AhnSeonYoung, LeeHyeJin
+
+* BACK-END: KimYuBin, ChoHyoungSeo
 
 ## Building Role 2
-PROTOTYPING: KimMinJi, AhnSeonYoung
-<br>
-DEVELOP: KimYuBin, ChoHyoungSeo, LeeHyeJin
+* PROTOTYPING: KimMinJi, AhnSeonYoung
+
+* DEVELOP: KimYuBin, ChoHyoungSeo, LeeHyeJin
 
 ## Final
 yet processing
