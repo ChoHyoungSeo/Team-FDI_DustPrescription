@@ -28,7 +28,7 @@ DEVELOP: KimYuBin, ChoHyoungSeo, LeeHyeJin
 ## Final
 yet processing
 
-## DustDescription
+## DustDescription ![Version](https://img.shields.io/badge/Version-0.2.1-green.svg)
 An application that shows public/private recognition of Fine Dust, encourages people who involved in using this App to do some actions and realize how hazardous it is.
 
 ## The motivation behind the creation/maintenance of this project
