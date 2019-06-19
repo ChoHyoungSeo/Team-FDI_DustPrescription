@@ -5,7 +5,7 @@
 KimMinJi, KimYuBin, AhnSeonYoung, LeeHyeJin, ChoHyoungSeo
 
 
-# Building Role 1 
+## Building Role 1 
 PM: ChoHyoungSeo
 <br>
 PLAN: KimMinJi, KimYuBin, AhnSeonYoung, LeeHyeJin, ChoHyoungSeo
@@ -16,12 +16,12 @@ FRONT-END: KimMinJi, AhnSeonYoung, LeeHyeJin
 <br>
 BACK-END: KimYuBin, ChoHyoungSeo
 
-# Building Role 2
+## Building Role 2
 PROTOTYPING: KimMinJi, AhnSeonYoung
 <br>
 DEVELOP: KimYuBin, ChoHyoungSeo, LeeHyeJin
 
-# Final
+## Final
 yet processing
 
 ## DustDescription
