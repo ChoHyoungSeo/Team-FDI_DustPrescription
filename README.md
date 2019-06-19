@@ -2,7 +2,11 @@
 🌟Mobile Application Using Android Studio for PM Hackaton🌟
 
 ## Members
-KimMinJi, KimYuBin, AhnSeonYoung, LeeHyeJin, ChoHyoungSeo
+* KimMinJi
+* KimYuBin
+* AhnSeonYoung
+* LeeHyeJin
+* ChoHyoungSeo
 
 
 ## Building Role 1 
@@ -34,3 +38,9 @@ Furthermore, we can encourage people who doesn't use this app therefore this app
 **why** the project exists: 
 <br>
 Nowadays people are ignorant of Fine Dust.
+
+
+## License
+GNU General Public License (GPLv2)
+<br/>
+GNU 2.0 © [Team-FDI]()
