@@ -43,7 +43,7 @@ Furthermore, we can encourage people who doesn't use this app therefore this app
 Nowadays people are ignorant of Fine Dust.
 
 
-## License
+## License [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 GNU General Public License (GPLv3)
 <br/>
 GNU 3.0 © [Team-FDI](https://github.com/ChoHyoungSeo/Team-FDI_DustDescription)
