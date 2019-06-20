@@ -36,11 +36,12 @@ An application that shows public/private recognition of Fine Dust, encourages pe
 
 ## The motivation behind the creation/maintenance of this project
 The motivation of this application is to enlighten the danger of Fine Dust and realize how ignorant we were. Also this application is going to inform user what he/she should do to minimize harm and prevent occursion of Fine Dust.
-Furthermore, we can encourage people who doesn't use this app therefore this app is going to make a "Web/Network" between people which means all the people will become more aware of Fine Dust at final.
-
+Furthermore, we can encourage people who don't use this app therefore this app is going to make a "Web/Network" between people which means all the people will become more aware of Fine Dust at final.
 **why** the project exists: 
 <br>
-Nowadays people are ignorant of Fine Dust.
+Nowadays people are ignorant of Fine Dust. This can change citizens recognition about Fine Dust and more aware of it. 
+Therefore we can be further away from diseases that occured by dust.
+Finally, we will solve the fundamental cause of Fine Dust.
 
 
 ## Build status
@@ -52,7 +53,6 @@ Nowadays people are ignorant of Fine Dust.
 ## Tech/framework used
 <b>Built with</b>
 - [AndroidStudio](https://developer.android.com/studio/install?hl=ko)
-
 
 ## Screenshots
 logo, screenshots 
