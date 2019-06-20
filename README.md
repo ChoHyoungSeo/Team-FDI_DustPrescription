@@ -25,8 +25,8 @@
 
 * DEVELOP: KimYuBin, ChoHyoungSeo, LeeHyeJin
 
-## Final
-yet processing
+## Final 본선진출
+yet processing / The Final(본선): June 26th~27th, 2019
 
 ## DustDescription ![Version](https://img.shields.io/badge/Version-0.2.1-green.svg)
 An application that shows public/private recognition of Fine Dust, encourages people who involved in using this App to do some actions and realize how hazardous it is.
