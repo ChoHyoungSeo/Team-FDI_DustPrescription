@@ -43,6 +43,23 @@ Furthermore, we can encourage people who doesn't use this app therefore this app
 Nowadays people are ignorant of Fine Dust.
 
 
+## Build status
+[![Windows Build Status](https://ci.appveyor.com/api/projects/status/github/ChoHyoungSeo/Team-FDI_DustDescription?branch=master&svg=true)](https://ci.appveyor.com/project/akashnimare/foco/branch/master)
+
+## Code style
+[![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
+ 
+## Tech/framework used
+<b>Built with</b>
+- [AndroidStudio](https://developer.android.com/studio/install?hl=ko)
+
+
+## Screenshots
+logo, screenshots 
+
+## API Reference
+atmosphere pollution
+
 ## License [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 GNU General Public License (GPLv3)
 <br/>
