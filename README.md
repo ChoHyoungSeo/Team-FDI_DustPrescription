@@ -1,5 +1,8 @@
 # Team-FDI_DustDescription
 🌟Mobile Application Using Android Studio for PM Hackaton🌟
+<br/>
+![AndroidStudio](https://img.shields.io/badge/AndroidStudio-JAVA-informational.svg)
+![FDI](https://img.shields.io/badge/Team-FDI-darkgreen.svg)
 
 ## Members
 * KimMinJi
