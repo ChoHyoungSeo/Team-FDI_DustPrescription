@@ -1,31 +1,23 @@
 package com.cookandroid.registration;
 
-import android.os.Bundle;
 import android.os.StrictMode;
-import android.support.v7.app.AppCompatActivity;
-import android.widget.TextView;
 
 import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserFactory;
 
 import java.net.URL;
 
-public class ApiParseEx extends AppCompatActivity {
+public class ApiParsing {
 
     boolean indataTime = false, inpm10Value = false, inpm25Value = false, inpm10Grade = false
             ,inpm25Grade = false, initem = false;
 
     String dataTime = null, pm10Value = null, pm25Value = null, pm10Grade = null,pm25Grade = null;
 
-    TextView status1;
+    public Item Apiupdate (){
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.apiparseex);
         StrictMode.enableDefaults();
-
-        status1 = (TextView)findViewById(R.id.result);
+        Item item = new Item();
 
         try{
             URL url = new URL("http://openapi.airkorea.or.kr/openapi/services/rest/ArpltnInforInqireSvc/getMsrstnAcctoRltmMesureDnsty?"
@@ -38,7 +30,10 @@ public class ApiParseEx extends AppCompatActivity {
 
             int parserEvent = parser.getEventType();
 
-            while (parserEvent != XmlPullParser.END_DOCUMENT){
+            while (true){
+                if (parserEvent == XmlPullParser.END_TAG && parser.getName().equals("item")){
+                    break;
+                }
                 switch(parserEvent){
                     case XmlPullParser.START_TAG:
                         if(parser.getName().equals("dataTime")){
@@ -56,37 +51,36 @@ public class ApiParseEx extends AppCompatActivity {
                         if(parser.getName().equals("pm25Grade")){
                             inpm25Grade = true;
                         }
-                        if(parser.getName().equals("message")){
-                            status1.setText(status1.getText()+"에러");
-                        }
-
                         break;
                     case XmlPullParser.TEXT:
                         if(indataTime){
                             dataTime = parser.getText();
+                            item.setDataTime(dataTime);
                             indataTime = false;
                         }
                         if(inpm10Value){
                             pm10Value = parser.getText();
+                            item.setPm10Value(pm10Value);
                             inpm10Value= false;
                         }
                         if(inpm25Value){
                             pm25Value = parser.getText();
+                            item.setPm25Value(pm25Value);
                             inpm25Value = false;
                         }
                         if(inpm10Grade){
                             pm10Grade = parser.getText();
+                            item.setPm10Grade(pm10Grade);
                             inpm10Grade = false;
                         }
                         if(inpm25Grade){
                             pm25Grade = parser.getText();
+                            item.setPm25Grade(pm25Grade);
                             inpm25Grade = false;
                         }
                         break;
                     case XmlPullParser.END_TAG:
                         if(parser.getName().equals("item")){
-                           status1.setText(status1.getText()+"측정시 : " +dataTime +"\n 미세먼지 농도 : " + pm10Value
-                                   +"\n 초미세먼지 농도 : " + pm25Value +  "\n 미세먼지 등급 : " +  pm10Grade+ "\n 초미세먼지 등급: " + pm25Grade+"\n");
                             initem = false;
                         }
                         break;
@@ -95,7 +89,7 @@ public class ApiParseEx extends AppCompatActivity {
             }
         }catch (Exception e ){
             e.printStackTrace();
-            status1.setText("에러가..났습니다...");
         }
+        return item;
     }
 }
