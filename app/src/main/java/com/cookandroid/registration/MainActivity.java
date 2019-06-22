@@ -43,6 +43,9 @@ public class MainActivity extends AppCompatActivity {
                 quest_string.add("공기가 좋으니, 산책은 어떠신가요?");
                 questperform_num.add("-");
                 icon.add(R.drawable.water);
+                quest_string.add("공기가 좋으니, 산책은 어떠신가요?");
+                questperform_num.add("-");
+                icon.add(R.drawable.water);
                 break;
             case "2":
                 quest_string.add("물을 자주 섭취하세요!");
@@ -77,7 +80,7 @@ public class MainActivity extends AppCompatActivity {
         layoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(layoutManager);
 
-        mAdapter = new QuestAdapter(quest_string,questperform_num,icon);
+        mAdapter = new QuestAdapter(quest_string,questperform_num,icon,MainActivity.this);
         recyclerView.setAdapter(mAdapter);
 
     }
