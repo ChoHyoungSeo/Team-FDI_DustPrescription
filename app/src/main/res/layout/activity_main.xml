@@ -23,34 +23,42 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />
         </LinearLayout>
-        <ImageView
-            android:id="@+id/character"
-            android:layout_width="match_parent"
-            android:layout_height="300dp"
+        <LinearLayout
+            android:layout_margin="3dp"
+            android:background="@drawable/contextline"
+            android:orientation="vertical"
             android:layout_below="@id/grapelayout"
-            android:background="@drawable/cat"/>
-        <TextView
-            android:layout_marginBottom="5dp"
-            android:id="@+id/Text"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="나의 인식도"
-            android:textSize="30dp"
-            android:layout_below="@id/character"/>
-        <ProgressBar
-            android:layout_margin="8dp"
-            android:id="@+id/my_head"
-            android:layout_below="@id/Text"
-            style="@android:style/Widget.ProgressBar.Horizontal"
-            android:progress="25"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            />
-        <android.support.v7.widget.RecyclerView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/my_head">
-        </android.support.v7.widget.RecyclerView>
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/character"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_below="@id/grapelayout"
+                android:src="@drawable/cat"/>
+            <TextView
+                android:layout_marginBottom="5dp"
+                android:id="@+id/Text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="나의 인식도"
+                android:textSize="25dp"
+                android:layout_below="@id/character"/>
+            <ProgressBar
+                android:layout_margin="8dp"
+                android:id="@+id/my_head"
+                android:layout_below="@id/Text"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:progress="25"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/my_head">
+            </android.support.v7.widget.RecyclerView>
+        </LinearLayout>
 
     </RelativeLayout>
 </ScrollView>
