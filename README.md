@@ -1,4 +1,4 @@
-# Team-FDI_DustDescription
+# Team-FDI_DustPrescription
 🌟Mobile Application Using Android Studio for PM Hackaton🌟
 <br/>
 ![AndroidStudio](https://img.shields.io/badge/AndroidStudio-JAVA-informational.svg)
@@ -31,7 +31,7 @@
 ## Final 본선진출
 yet processing / The Final(본선): June 26th~27th, 2019
 
-## DustDescription ![Version](https://img.shields.io/badge/Version-0.2.1-green.svg)
+## DustPrescription ![Version](https://img.shields.io/badge/Version-0.2.1-green.svg)
 An application that shows public/private recognition of Fine Dust, encourages people who involved in using this App to do some actions and realize how hazardous it is.
 
 ## The motivation behind the creation/maintenance of this project
