@@ -1,10 +1,12 @@
 package com.cookandroid.registration;
 
+import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
@@ -31,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
         Item item = ap.Apiupdate();
 
         apidisplay = findViewById(R.id.apipic);
+        apiData = findViewById(R.id.apiData);
         dust = findViewById(R.id.dust);
         dustbar = findViewById(R.id.dustbar);
         recog = findViewById(R.id.recog);
@@ -40,8 +43,14 @@ public class MainActivity extends AppCompatActivity {
         questperform_num= new ArrayList<>();
         icon = new ArrayList<>();
 
+        apiData.setText(item.getDataTime() + "기준" + "\n"
+        + "미세먼지 농도: " + item.getPm10Value() + "\n"
+        + "초미세먼지 농도: " + item.getPm25Value() + "\n"
+        + "미세먼지 등급: " + item.getPm10Grade() + "\n"
+        + "초미세먼지 등급: " + item.getPm25Grade() + "\n");
+
         dustbar.setProgress(Integer.parseInt(item.getPm10Grade()));
-        recogbar.setProgress(35);
+        recogbar.setProgress(20);
 
         switch (item.getPm10Grade()){
             case "1":
