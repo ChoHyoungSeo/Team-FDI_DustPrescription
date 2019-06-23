@@ -2,9 +2,10 @@
 <ScrollView android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:android="http://schemas.android.com/apk/res/android">
-    <RelativeLayout android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
         <LinearLayout
             android:id="@+id/grapelayout"
             android:weightSum="2"
@@ -12,16 +13,42 @@
             android:layout_width="match_parent"
             android:layout_height="180dp"
             android:background="@color/colorPrimary">
-            <TextView
+            <ImageView
                 android:layout_weight="1"
-                android:id="@+id/apidata"
+                android:id="@+id/apipic"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />
-            <TextView
-                android:layout_weight="1"
-                android:id="@+id/grape"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent" />
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/dust"
+                    android:textColor="#000000"
+                    android:textSize="15dp"/>
+                <ProgressBar
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/dust"
+                    style="@android:style/Widget.ProgressBar.Horizontal"
+                    android:id="@+id/dustbar" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/dustbar"
+                    android:id="@+id/recog"
+                    android:textColor="#000000"
+                    android:textSize="15dp"/>
+                <ProgressBar
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/recog"
+                    style="@android:style/Widget.ProgressBar.Horizontal"
+                    android:id="@+id/recogbar" />
+            </LinearLayout>
         </LinearLayout>
         <LinearLayout
             android:layout_margin="3dp"
@@ -51,8 +78,7 @@
                 style="@android:style/Widget.ProgressBar.Horizontal"
                 android:progress="25"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                />
+                android:layout_height="wrap_content" />
             <android.support.v7.widget.RecyclerView
                 android:id="@+id/recyclerview"
                 android:layout_width="wrap_content"
@@ -60,6 +86,5 @@
                 android:layout_below="@id/my_head">
             </android.support.v7.widget.RecyclerView>
         </LinearLayout>
-
     </RelativeLayout>
 </ScrollView>

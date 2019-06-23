@@ -4,6 +4,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.widget.ImageView;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -11,7 +13,9 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
-    TextView apidisplay;
+    ImageView apidisplay;
+    TextView apiData, dust, recog;
+    ProgressBar dustbar, recogbar;
     private RecyclerView recyclerView;
     private RecyclerView.Adapter mAdapter;
     private RecyclerView.LayoutManager layoutManager;
@@ -26,20 +30,24 @@ public class MainActivity extends AppCompatActivity {
         ApiParsing ap = new ApiParsing();
         Item item = ap.Apiupdate();
 
-        apidisplay = findViewById(R.id.apidata);
+        apidisplay = findViewById(R.id.apipic);
+        dust = findViewById(R.id.dust);
+        dustbar = findViewById(R.id.dustbar);
+        recog = findViewById(R.id.recog);
+        recogbar = findViewById(R.id.recogbar);
         recyclerView = findViewById(R.id.recyclerview);
         quest_string = new ArrayList<>();
         questperform_num= new ArrayList<>();
         icon = new ArrayList<>();
 
-        apidisplay.setText("시간: "+item.getDataTime()+"\n"
-        +"미세먼지 농도: "+item.getPm10Value()+"\n"
-        +"초미세먼지 농도: " + item.getPm25Value() + "\n"
-        +"미세먼지 등급" + item.getPm10Grade() + "\n"
-        +"초미세먼지 등급: "+item.getPm25Grade());
+        dust.setText("미세먼지농도");
+        dustbar.setProgress(Integer.parseInt(item.getPm10Grade()));
+        recog.setText("시민인식도");
+//        recogbar.setProgress(35);
 
         switch (item.getPm10Grade()){
             case "1":
+                apidisplay.setImageResource(R.drawable.api_1);
                 quest_string.add("공기가 좋으니, 산책은 어떠신가요?");
                 questperform_num.add("-");
                 icon.add(R.drawable.water);
@@ -48,6 +56,7 @@ public class MainActivity extends AppCompatActivity {
                 icon.add(R.drawable.water);
                 break;
             case "2":
+                apidisplay.setImageResource(R.drawable.api_2);
                 quest_string.add("물을 자주 섭취하세요!");
                 questperform_num.add("100");
                 icon.add(R.drawable.water);
@@ -65,11 +74,13 @@ public class MainActivity extends AppCompatActivity {
                 icon.add(R.drawable.water);
                 break;
             case "3":
+                apidisplay.setImageResource(R.drawable.api_3);
                 quest_string.add("야채 씻어먹기");
                 questperform_num.add("2000");
                 icon.add(R.drawable.water);
                 break;
             case "4":
+                apidisplay.setImageResource(R.drawable.api_4);
                 quest_string.add("문을 꼭 닫고, 실외활동 자제하세요!");
                 questperform_num.add("500");
                 icon.add(R.drawable.water);
