@@ -40,10 +40,8 @@ public class MainActivity extends AppCompatActivity {
         questperform_num= new ArrayList<>();
         icon = new ArrayList<>();
 
-        dust.setText("미세먼지농도");
         dustbar.setProgress(Integer.parseInt(item.getPm10Grade()));
-        recog.setText("시민인식도");
-//        recogbar.setProgress(35);
+        recogbar.setProgress(35);
 
         switch (item.getPm10Grade()){
             case "1":

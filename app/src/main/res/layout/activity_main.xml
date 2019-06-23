@@ -24,28 +24,27 @@
                 android:orientation="vertical"
                 android:layout_weight="1">
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:id="@+id/dust"
+                    android:text="미세먼지 농도"
                     android:textColor="#000000"
                     android:textSize="15dp"/>
                 <ProgressBar
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_below="@id/dust"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
                     style="@android:style/Widget.ProgressBar.Horizontal"
                     android:id="@+id/dustbar" />
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_below="@id/dustbar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="시민 인식도"
                     android:id="@+id/recog"
                     android:textColor="#000000"
                     android:textSize="15dp"/>
                 <ProgressBar
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_below="@id/recog"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
                     style="@android:style/Widget.ProgressBar.Horizontal"
                     android:id="@+id/recogbar" />
             </LinearLayout>
