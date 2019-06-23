@@ -6,7 +6,7 @@
 
 ## Members
 * KimMinJi
-* KimYuBin
+* KimYooBin
 * AhnSeonYoung
 * LeeHyeJin
 * ChoHyoungSeo
@@ -15,18 +15,18 @@
 ## Building Role 1 
 * PM: ChoHyoungSeo
 
-* PLAN: KimMinJi, KimYuBin, AhnSeonYoung, LeeHyeJin, ChoHyoungSeo
+* PLAN: KimMinJi, KimYooBin, AhnSeonYoung, LeeHyeJin, ChoHyoungSeo
 
-* Design: KimMinJi, KimYuBin, AhnSeonYoung, LeeHyeJin, ChoHyoungSeo
+* Design: KimMinJi, KimYooBin, AhnSeonYoung, LeeHyeJin, ChoHyoungSeo
 
 * FRONT-END: KimMinJi, AhnSeonYoung, LeeHyeJin
 
-* BACK-END: KimYuBin, ChoHyoungSeo
+* BACK-END: KimYooBin, ChoHyoungSeo
 
 ## Building Role 2
 * PROTOTYPING: KimMinJi, AhnSeonYoung
 
-* DEVELOP: KimYuBin, ChoHyoungSeo, LeeHyeJin
+* DEVELOP: KimYooBin, ChoHyoungSeo, LeeHyeJin
 
 ## Final 본선진출
 yet processing / The Final(본선): June 26th~27th, 2019
