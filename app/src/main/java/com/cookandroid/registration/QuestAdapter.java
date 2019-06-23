@@ -7,6 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -73,7 +74,9 @@ public class QuestAdapter extends RecyclerView.Adapter<QuestAdapter.MyViewHolder
     @Override
     public void onClick(View v) {
         MyViewHolder holder = (MyViewHolder)v.getTag();
+//        ProgressBar my_head = (ProgressBar)v.findViewById(R.id.my_head);
         if(v.getId() == R.id.btn_quest){
+//            my_head.incrementProgressBy(25);
             quest_num.remove(holder.getAdapterPosition());
             quest_string.remove(holder.getAdapterPosition());
             icon.remove(holder.getAdapterPosition());

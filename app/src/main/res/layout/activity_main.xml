@@ -8,44 +8,55 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
         <LinearLayout
             android:id="@+id/grapelayout"
-            android:weightSum="2"
+            android:weightSum="3"
             android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="180dp"
-            android:background="@color/colorPrimary">
+            android:layout_height="180dp">
             <ImageView
                 android:layout_weight="1"
                 android:id="@+id/apipic"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="5dp"
+                android:textColor="#000000"
+                android:textSize="13dp"
+                android:id="@+id/apiData"/>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
                 android:layout_weight="1">
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:id="@+id/dust"
+                    android:layout_marginTop="30dp"
+                    android:text="미세먼지 농도"
+                    android:layout_marginLeft="10dp"
                     android:textColor="#000000"
                     android:textSize="15dp"/>
                 <ProgressBar
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_below="@id/dust"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
                     style="@android:style/Widget.ProgressBar.Horizontal"
                     android:id="@+id/dustbar" />
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_below="@id/dustbar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="시민 인식도"
+                    android:layout_marginLeft="10dp"
                     android:id="@+id/recog"
                     android:textColor="#000000"
                     android:textSize="15dp"/>
                 <ProgressBar
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_below="@id/recog"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
                     style="@android:style/Widget.ProgressBar.Horizontal"
                     android:id="@+id/recogbar" />
             </LinearLayout>
@@ -60,7 +71,8 @@
             <ImageView
                 android:id="@+id/character"
                 android:layout_width="match_parent"
-                android:layout_height="300dp"
+                android:layout_marginTop="20dp"
+                android:layout_height="280dp"
                 android:layout_below="@id/grapelayout"
                 android:src="@drawable/yakyak2"/>
             <TextView
@@ -69,6 +81,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="나의 인식도"
+                android:layout_marginLeft="5dp"
                 android:textSize="25dp"
                 android:layout_below="@id/character"/>
             <ProgressBar
@@ -76,7 +89,6 @@
                 android:id="@+id/my_head"
                 android:layout_below="@id/Text"
                 style="@android:style/Widget.ProgressBar.Horizontal"
-                android:progress="25"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
             <android.support.v7.widget.RecyclerView
