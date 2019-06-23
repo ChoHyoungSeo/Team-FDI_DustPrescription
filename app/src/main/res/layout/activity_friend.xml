@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".friend"
+    android:background="#44ab6f">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="친구 목록"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="25dp"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:layout_marginRight="85dp"
+                android:layout_marginLeft="150dp"/>
+
+            <Button
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="+"
+                android:layout_gravity="center"
+                android:gravity="center"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="UserId        Name        Age         sex"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:id="@+id/friendTable"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="001       Yoobin          22          여자"
+                android:textColor="#ffffff"
+                android:layout_marginRight="15dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:id="@+id/friend01"/>
+
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="35dp"
+                android:text="알림"
+                android:textSize="10dp"
+                android:id="@+id/alert01"/>
+
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="35dp"
+                android:text="현황"
+                android:textSize="10dp"
+                android:id="@+id/progress01"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="002       Hyejin          21          여자"
+                android:textColor="#ffffff"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginRight="15dp"
+                android:id="@+id/friend02"/>
+
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="35dp"
+                android:text="알림"
+                android:textSize="10dp"
+                android:id="@+id/alert02"/>
+
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="35dp"
+                android:text="현황"
+                android:textSize="10dp"
+                android:id="@+id/progress02"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="003       MinJi           21          여자"
+                android:textColor="#ffffff"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginRight="15dp"
+                android:id="@+id/friend03"/>
+
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="35dp"
+                android:text="알림"
+                android:textSize="10dp"
+                android:id="@+id/alert03"/>
+
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="35dp"
+                android:text="현황"
+                android:textSize="10dp"
+                android:id="@+id/progress03"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="004       SeonYoung       21          여자"
+                android:textColor="#ffffff"
+                android:layout_gravity="center"
+                android:layout_marginRight="15dp"
+                android:gravity="center"
+                android:id="@+id/friend04"/>
+
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="35dp"
+                android:text="알림"
+                android:textSize="10dp"
+                android:id="@+id/alert04"/>
+
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="35dp"
+                android:text="현황"
+                android:textSize="10dp"
+                android:id="@+id/progress04"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="005       HyoungSeo       24          남자"
+                android:textColor="#ffffff"
+                android:layout_marginRight="15dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:id="@+id/friend05"/>
+
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="35dp"
+                android:text="알림"
+                android:textSize="10dp"
+                android:id="@+id/alert05"/>
+
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="35dp"
+                android:text="현황"
+                android:textSize="10dp"
+                android:id="@+id/progress05"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
