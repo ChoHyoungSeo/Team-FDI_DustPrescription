@@ -23,8 +23,7 @@ public class Frg_main extends Fragment {
     private RecyclerView recyclerView;
     private RecyclerView.Adapter mAdapter;
     private RecyclerView.LayoutManager layoutManager;
-    private List<String> quest_string, questperform_num;
-    private List<Integer> icon;
+    private List<String[]> dataset;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -40,9 +39,7 @@ public class Frg_main extends Fragment {
         recog = view1.findViewById(R.id.recog);
         recogbar = view1.findViewById(R.id.recogbar);
         recyclerView = view1.findViewById(R.id.recyclerview);
-        quest_string = new ArrayList<>();
-        questperform_num= new ArrayList<>();
-        icon = new ArrayList<>();
+        dataset = new ArrayList<>();
 
         dustbar.setProgress(Integer.parseInt(item.getPm10Grade()));
         recogbar.setProgress(20);
@@ -50,50 +47,35 @@ public class Frg_main extends Fragment {
         switch (item.getPm10Grade()){
             case "1":
                 //apidisplay.setImageResource(R.drawable.api_1);
-                quest_string.add("공기가 좋으니, 산책은 어떠신가요?");
-                questperform_num.add("-");
-                icon.add(R.drawable.water);
-                quest_string.add("공기가 좋으니, 산책은 어떠신가요?");
-                questperform_num.add("-");
-                icon.add(R.drawable.water);
+                dataset.add(new String[]{"0", "1", "신선한 공기를 마시며 산책하세요"});
+                dataset.add(new String[]{"0", "1", "미세먼지 퀴즈를 풀어보세요"});
+                dataset.add(new String[]{"0", "3", "사랑하는 사람에게 미세 문자를 보내주세요"});
                 break;
             case "2":
                 //apidisplay.setImageResource(R.drawable.api_2);
-                quest_string.add("물을 자주 섭취하세요!");
-                questperform_num.add("100");
-                icon.add(R.drawable.water);
-                quest_string.add("물을 자주 섭취하세요!");
-                questperform_num.add("100");
-                icon.add(R.drawable.water);
-                quest_string.add("물을 자주 섭취하세요!");
-                questperform_num.add("100");
-                icon.add(R.drawable.water);
-                quest_string.add("물을 자주 섭취하세요!");
-                questperform_num.add("100");
-                icon.add(R.drawable.water);
-                quest_string.add("물을 자주 섭취하세요!");
-                questperform_num.add("100");
-                icon.add(R.drawable.water);
+                dataset.add(new String[]{"0", "5", "5개의 예방책을 수행하세요"});
+                dataset.add(new String[]{"0", "1", "미세먼지 퀴즈를 풀어보세요"});
+                dataset.add(new String[]{"0", "3", "사랑하는 사람에게 미세 문자를 보내주세요"});
                 break;
             case "3":
                 //apidisplay.setImageResource(R.drawable.api_3);
-                quest_string.add("야채 씻어먹기");
-                questperform_num.add("2000");
-                icon.add(R.drawable.water);
+                dataset.add(new String[]{"0", "5", "5개의 예방책을 수행하세요"});
+                dataset.add(new String[]{"0", "1", "미세먼지 퀴즈를 풀어보세요"});
+                dataset.add(new String[]{"0", "3", "사랑하는 사람에게 미세 문자를 보내주세요"});
                 break;
             case "4":
                 //apidisplay.setImageResource(R.drawable.api_4);
-                quest_string.add("문을 꼭 닫고, 실외활동 자제하세요!");
-                questperform_num.add("500");
-                icon.add(R.drawable.water);
+                dataset.add(new String[]{"0", "5", "5개의 예방책을 수행하세요"});
+                dataset.add(new String[]{"0", "1", "미세먼지 퀴즈를 풀어보세요"});
+                dataset.add(new String[]{"0", "3", "사랑하는 사람에게 미세 문자를 보내주세요"});
                 break;
 
         }
 
-        layoutManager = new LinearLayoutManager(container.getContext());
+        layoutManager = new LinearLayoutManager(getContext());
         recyclerView.setLayoutManager(layoutManager);
 
-        mAdapter = new QuestAdapter(quest_string,questperform_num,icon, container.getContext());
+        mAdapter = new MissionAdapter( dataset, container.getContext());
         recyclerView.setAdapter(mAdapter);
 
         return view1;

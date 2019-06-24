@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:gravity="center_vertical"
+    android:background="@drawable/contextline"
+    android:padding="8dp"
+    android:layout_margin="5dp"
+    android:id="@+id/btn_quest"
+    android:clickable="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:padding="20dp"
+        android:background="@drawable/mission_line"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/quest_perform_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:textSize="28dp"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="/"
+            android:textSize="28dp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/quest_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5"
+            android:textSize="28dp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+    <TextView
+        android:layout_centerVertical="true"
+        android:id="@+id/mission_body"
+        android:layout_marginLeft="100dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="물 한 잔의 여유!"
+        android:textColor="@android:color/black"
+        android:textSize="20dp"/>
+</RelativeLayout>
