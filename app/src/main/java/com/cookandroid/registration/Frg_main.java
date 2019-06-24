@@ -18,7 +18,7 @@ import java.util.List;
 
 public class Frg_main extends Fragment {
     ImageView apidisplay;
-    TextView apiData, dust, recog;
+    TextView dust, recog;
     ProgressBar dustbar, recogbar;
     private RecyclerView recyclerView;
     private RecyclerView.Adapter mAdapter;
@@ -35,7 +35,6 @@ public class Frg_main extends Fragment {
         Item item = ap.Apiupdate();
 
         apidisplay = view1.findViewById(R.id.apipic);
-        apiData = view1.findViewById(R.id.apiData);
         dust = view1.findViewById(R.id.dust);
         dustbar = view1.findViewById(R.id.dustbar);
         recog = view1.findViewById(R.id.recog);
@@ -45,18 +44,12 @@ public class Frg_main extends Fragment {
         questperform_num= new ArrayList<>();
         icon = new ArrayList<>();
 
-        apiData.setText(item.getDataTime() + "기준" + "\n"
-                + "미세먼지 농도: " + item.getPm10Value() + "\n"
-                + "초미세먼지 농도: " + item.getPm25Value() + "\n"
-                + "미세먼지 등급: " + item.getPm10Grade() + "\n"
-                + "초미세먼지 등급: " + item.getPm25Grade() + "\n");
-
         dustbar.setProgress(Integer.parseInt(item.getPm10Grade()));
         recogbar.setProgress(20);
 
         switch (item.getPm10Grade()){
             case "1":
-                apidisplay.setImageResource(R.drawable.api_1);
+                //apidisplay.setImageResource(R.drawable.api_1);
                 quest_string.add("공기가 좋으니, 산책은 어떠신가요?");
                 questperform_num.add("-");
                 icon.add(R.drawable.water);
@@ -65,7 +58,7 @@ public class Frg_main extends Fragment {
                 icon.add(R.drawable.water);
                 break;
             case "2":
-                apidisplay.setImageResource(R.drawable.api_2);
+                //apidisplay.setImageResource(R.drawable.api_2);
                 quest_string.add("물을 자주 섭취하세요!");
                 questperform_num.add("100");
                 icon.add(R.drawable.water);
@@ -83,13 +76,13 @@ public class Frg_main extends Fragment {
                 icon.add(R.drawable.water);
                 break;
             case "3":
-                apidisplay.setImageResource(R.drawable.api_3);
+                //apidisplay.setImageResource(R.drawable.api_3);
                 quest_string.add("야채 씻어먹기");
                 questperform_num.add("2000");
                 icon.add(R.drawable.water);
                 break;
             case "4":
-                apidisplay.setImageResource(R.drawable.api_4);
+                //apidisplay.setImageResource(R.drawable.api_4);
                 quest_string.add("문을 꼭 닫고, 실외활동 자제하세요!");
                 questperform_num.add("500");
                 icon.add(R.drawable.water);

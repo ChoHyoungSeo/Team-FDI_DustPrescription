@@ -1,37 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     xmlns:android="http://schemas.android.com/apk/res/android">
-    <RelativeLayout
+    <LinearLayout
+        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         xmlns:android="http://schemas.android.com/apk/res/android">
         <LinearLayout
-            android:background="@drawable/textline"
+            android:background="@drawable/backgroundline"
             android:orientation="vertical"
             android:layout_margin="15dp"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
             <LinearLayout
+                android:background="@drawable/contextline"
                 android:id="@+id/grapelayout"
-                android:weightSum="3"
+                android:weightSum="2"
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
-                android:layout_height="180dp">
+                android:layout_height="170dp">
                 <ImageView
                     android:layout_weight="1"
                     android:id="@+id/apipic"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent" />
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:layout_marginTop="40dp"
-                    android:layout_marginLeft="5dp"
-                    android:textColor="#000000"
-                    android:textSize="13dp"
-                    android:id="@+id/apiData"/>
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -41,13 +34,14 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:id="@+id/dust"
-                        android:layout_marginTop="30dp"
+                        android:layout_marginTop="25dp"
                         android:text="미세먼지 농도"
                         android:layout_marginLeft="10dp"
                         android:textColor="#000000"
                         android:textSize="15dp"/>
                     <ProgressBar
-                        android:layout_width="130dp"
+                        android:layout_margin="10dp"
+                        android:layout_width="150dp"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="20dp"
                         style="@android:style/Widget.ProgressBar.Horizontal"
@@ -61,32 +55,77 @@
                         android:textColor="#000000"
                         android:textSize="15dp"/>
                     <ProgressBar
-                        android:layout_width="130dp"
+                        android:layout_margin="10dp"
+                        android:layout_width="150dp"
                         android:layout_height="wrap_content"
                         style="@android:style/Widget.ProgressBar.Horizontal"
                         android:id="@+id/recogbar" />
                 </LinearLayout>
             </LinearLayout>
             <LinearLayout
-                android:layout_margin="3dp"
                 android:orientation="vertical"
-                android:layout_below="@id/grapelayout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
-                <ImageView
-                    android:id="@+id/character"
+                <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_marginTop="20dp"
-                    android:layout_height="280dp"
-                    android:layout_below="@id/grapelayout"
-                    android:src="@drawable/doctor"/>
+                    android:layout_height="330dp">
+                    <LinearLayout
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="25dp"
+                        android:padding="15dp"
+                        android:background="@drawable/textline"
+                        android:orientation="vertical"
+                        android:layout_width="280dp"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:textSize="18dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="진단 결과,"/>
+                        <TextView
+                            android:textSize="18dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="90%"/>
+                        <TextView
+                            android:textSize="18dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="90%"/>
+                    </LinearLayout>
+                    <ImageView
+                        android:layout_marginLeft="170dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_alignParentBottom="true"
+                        android:id="@+id/doctor"
+                        android:layout_width="150dp"
+                        android:layout_height="190dp"
+                        android:src="@drawable/doctor"/>
+                    <ImageView
+                        android:layout_alignParentBottom="true"
+                        android:id="@+id/emblem"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:src="@drawable/collection1"/>
+                </RelativeLayout>
+                <TextView
+                    android:padding="5dp"
+                    android:background="@drawable/contextline"
+                    android:layout_margin="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="미션 수행"
+                    android:textColor="#000000"
+                    android:textSize="33dp"
+                    android:gravity="center"/>
                 <android.support.v7.widget.RecyclerView
                     android:id="@+id/recyclerview"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@id/character">
-                </android.support.v7.widget.RecyclerView>
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    />
             </LinearLayout>
         </LinearLayout>
-    </RelativeLayout>
+    </LinearLayout>
 </ScrollView>

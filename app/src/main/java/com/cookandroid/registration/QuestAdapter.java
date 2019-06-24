@@ -86,15 +86,4 @@ public class QuestAdapter extends RecyclerView.Adapter<QuestAdapter.MyViewHolder
             Toast.makeText(con,"퀘스트 완료!",Toast.LENGTH_SHORT).show();
         }
     }
-
-    public void removeAt (int position){
-        quest_num.remove(position);
-        quest_string.remove(position);
-        icon.remove(position);
-
-        notifyItemRemoved(position);
-        notifyItemRangeChanged(position,icon.size());
-    }
-
-
 }
