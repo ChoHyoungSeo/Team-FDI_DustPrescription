@@ -97,10 +97,10 @@ public class Frg_main extends Fragment {
 
         }
 
-        layoutManager = new LinearLayoutManager(Frg_main.this);
+        layoutManager = new LinearLayoutManager(container.getContext());
         recyclerView.setLayoutManager(layoutManager);
 
-        mAdapter = new QuestAdapter(quest_string,questperform_num,icon, MainActivity);
+        mAdapter = new QuestAdapter(quest_string,questperform_num,icon, container.getContext());
         recyclerView.setAdapter(mAdapter);
 
         return view1;

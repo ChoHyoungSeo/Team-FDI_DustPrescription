@@ -1,9 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:layout_width="match_parent"
-android:layout_height="match_parent"
-xmlns:app="http://schemas.android.com/apk/res-auto"
-xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout
+    android:weightSum="11"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout
+        android:layout_weight="10"
+        android:id="@+id/context_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
 <android.support.design.widget.CoordinatorLayout
+    android:layout_weight="1"
     android:layout_alignParentBottom="true"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
@@ -18,8 +27,4 @@ xmlns:android="http://schemas.android.com/apk/res/android">
         app:labelVisibilityMode="labeled"
         />
 </android.support.design.widget.CoordinatorLayout>
-<FrameLayout
-    android:id="@+id/context_view"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"/>
-</RelativeLayout>
+</LinearLayout>
