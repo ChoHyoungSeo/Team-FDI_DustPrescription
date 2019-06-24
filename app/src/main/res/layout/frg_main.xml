@@ -79,28 +79,12 @@
                     android:layout_marginTop="20dp"
                     android:layout_height="280dp"
                     android:layout_below="@id/grapelayout"
-                    android:src="@drawable/yakyak2"/>
-                <TextView
-                    android:layout_marginBottom="5dp"
-                    android:id="@+id/Text"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="나의 인식도"
-                    android:layout_marginLeft="5dp"
-                    android:textSize="25dp"
-                    android:layout_below="@id/character"/>
-                <ProgressBar
-                    android:layout_margin="8dp"
-                    android:id="@+id/my_head"
-                    android:layout_below="@id/Text"
-                    style="@android:style/Widget.ProgressBar.Horizontal"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
+                    android:src="@drawable/doctor"/>
                 <android.support.v7.widget.RecyclerView
                     android:id="@+id/recyclerview"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/my_head">
+                    android:layout_below="@id/character">
                 </android.support.v7.widget.RecyclerView>
             </LinearLayout>
         </LinearLayout>
