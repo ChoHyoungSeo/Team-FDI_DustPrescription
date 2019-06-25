@@ -28,6 +28,7 @@
         <activity android:name=".Quest" />
         <activity android:name=".MainActivity" />
         <activity android:name=".friend" />
+        <activity android:name=".Quiz"></activity>
     </application>
 
 </manifest>
