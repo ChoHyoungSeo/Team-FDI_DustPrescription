@@ -9,7 +9,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-public class friend extends Fragment {
+public class Frg_friend extends Fragment {
 
     @Nullable
     @Override
