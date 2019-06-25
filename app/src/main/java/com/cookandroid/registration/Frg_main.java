@@ -46,25 +46,25 @@ public class Frg_main extends Fragment {
 
         switch (item.getPm10Grade()){
             case "1":
-                //apidisplay.setImageResource(R.drawable.api_1);
+                apidisplay.setImageResource(R.drawable.api_1);
                 dataset.add(new String[]{"0", "1", "신선한 공기를 마시며 산책하세요"});
                 dataset.add(new String[]{"0", "1", "미세먼지 퀴즈를 풀어보세요"});
                 dataset.add(new String[]{"0", "3", "사랑하는 사람에게 미세 문자를 보내주세요"});
                 break;
             case "2":
-                //apidisplay.setImageResource(R.drawable.api_2);
+                apidisplay.setImageResource(R.drawable.api_2);
                 dataset.add(new String[]{"0", "5", "5개의 예방책을 수행하세요"});
                 dataset.add(new String[]{"0", "1", "미세먼지 퀴즈를 풀어보세요"});
                 dataset.add(new String[]{"0", "3", "사랑하는 사람에게 미세 문자를 보내주세요"});
                 break;
             case "3":
-                //apidisplay.setImageResource(R.drawable.api_3);
+                apidisplay.setImageResource(R.drawable.api_3);
                 dataset.add(new String[]{"0", "5", "5개의 예방책을 수행하세요"});
                 dataset.add(new String[]{"0", "1", "미세먼지 퀴즈를 풀어보세요"});
                 dataset.add(new String[]{"0", "3", "사랑하는 사람에게 미세 문자를 보내주세요"});
                 break;
             case "4":
-                //apidisplay.setImageResource(R.drawable.api_4);
+                apidisplay.setImageResource(R.drawable.api_4);
                 dataset.add(new String[]{"0", "5", "5개의 예방책을 수행하세요"});
                 dataset.add(new String[]{"0", "1", "미세먼지 퀴즈를 풀어보세요"});
                 dataset.add(new String[]{"0", "3", "사랑하는 사람에게 미세 문자를 보내주세요"});

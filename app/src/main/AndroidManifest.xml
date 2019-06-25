@@ -27,7 +27,7 @@
         </activity>
         <activity android:name=".Quest" />
         <activity android:name=".MainActivity" />
-        <activity android:name=".friend"></activity>
+        <activity android:name=".friend" />
     </application>
 
 </manifest>
