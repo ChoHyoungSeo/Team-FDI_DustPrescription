@@ -28,7 +28,7 @@ public class QuestAdapter extends RecyclerView.Adapter<QuestAdapter.MyViewHolder
         public MyViewHolder(View v) {
             super(v);
             quest_body = v.findViewById(R.id.quest_body);
-            perform_num = v.findViewById(R.id.perform_number);
+            //perform_num = v.findViewById(R.id.perform_number);
             quest_icon = v.findViewById(R.id.quest_img);
             btn = v.findViewById(R.id.btn_quest);
         }
