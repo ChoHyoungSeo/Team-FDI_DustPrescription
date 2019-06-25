@@ -25,9 +25,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Quest" />
         <activity android:name=".MainActivity" />
-        <activity android:name=".friend" />
         <activity android:name=".Quiz1" />
         <activity android:name=".Quiz2" />
         <activity android:name=".Quiz3"></activity>

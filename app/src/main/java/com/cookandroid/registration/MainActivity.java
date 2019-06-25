@@ -1,29 +1,20 @@
 package com.cookandroid.registration;
 
-import android.graphics.Color;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
 import android.view.MenuItem;
-import android.widget.ImageView;
-import android.widget.LinearLayout;
-import android.widget.ProgressBar;
-import android.widget.TextView;
-
-import java.util.ArrayList;
-import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
     private FragmentManager fragmentManager = getSupportFragmentManager();
     private Frg_main frg1 = new Frg_main();
-    private friend frg2 = new friend();
-    private Quiz1 fr3 = new Quiz1();
+    private Frg_friend frg2 = new Frg_friend();
+    private Frg_prevention frg3 = new Frg_prevention();
+    private Frg_Quiz frg4 = new Frg_Quiz();
     private BottomNavigationView navi ;
 
     @Override
@@ -47,6 +38,12 @@ public class MainActivity extends AppCompatActivity {
                     case R.id.friend:
                         transaction.replace(R.id.context_view,frg2).commitAllowingStateLoss();
                         break;
+                    case R.id.move:
+                        transaction.replace(R.id.context_view,frg3).commitAllowingStateLoss();
+                        break;
+                    case R.id.quiz:
+                        transaction.replace(R.id.context_view,frg4).commitAllowingStateLoss();
+
                 }
                 return true;
             }
