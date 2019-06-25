@@ -50,7 +50,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:background="None"
+                    android:background="#00ff0000"
                     android:textSize="15dp"
                     android:layout_gravity="center"
                     android:text="O"/>
@@ -58,7 +58,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:background="None"
+                    android:background="#00ff0000"
                     android:textSize="15dp"
                     android:layout_gravity="center"
                     android:text="X"/>
