@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
 
     private FragmentManager fragmentManager = getSupportFragmentManager();
     private Frg_main frg1 = new Frg_main();
+    private friend frg2 = new friend();
     private BottomNavigationView navi ;
 
     @Override
@@ -42,6 +43,8 @@ public class MainActivity extends AppCompatActivity {
                     case R.id.main:
                         transaction.replace(R.id.context_view, frg1).commitAllowingStateLoss();
                         break;
+                    case R.id.friend:
+                        transaction.replace(R.id.context_view,frg2).commitAllowingStateLoss();
                 }
                 return true;
             }
