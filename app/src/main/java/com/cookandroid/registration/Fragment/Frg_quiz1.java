@@ -31,7 +31,7 @@ public class Frg_quiz1 extends Fragment implements View.OnClickListener {
 
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View v = inflater.inflate(R.layout.activity_quiz1, container, false);
+        View v = inflater.inflate(R.layout.frg_quiz1, container, false);
 
         date = v.findViewById(R.id.date);
         quiz = v.findViewById(R.id.quiz);

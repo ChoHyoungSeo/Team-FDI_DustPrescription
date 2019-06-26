@@ -27,7 +27,7 @@ public class Frg_quiz3 extends Fragment implements View.OnClickListener {
 
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View v = inflater.inflate(R.layout.activity_quiz3, container, false);
+        View v = inflater.inflate(R.layout.frg_quiz3, container, false);
 
         date = v.findViewById(R.id.date);
         quiz = v.findViewById(R.id.quiz);
@@ -60,7 +60,7 @@ public class Frg_quiz3 extends Fragment implements View.OnClickListener {
         Frg_quiz4 frg4 = new Frg_quiz4();
         FragmentManager fragmentManager = getFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-        fragmentTransaction.replace(R.id.container, frg4);
+        fragmentTransaction.replace(R.id.context_view, frg4);
         fragmentTransaction.addToBackStack(null);
         fragmentTransaction.commit();
     }

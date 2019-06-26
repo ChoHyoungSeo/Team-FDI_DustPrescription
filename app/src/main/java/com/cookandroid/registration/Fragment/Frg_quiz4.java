@@ -14,7 +14,7 @@ public class Frg_quiz4 extends Fragment {
 
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View v = inflater.inflate(R.layout.activity_quiz3, container, false);
+        View v = inflater.inflate(R.layout.frg_quiz4, container, false);
         return v;
     }
 }

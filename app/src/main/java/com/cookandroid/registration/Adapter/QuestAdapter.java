@@ -47,7 +47,7 @@ public class QuestAdapter extends RecyclerView.Adapter<QuestAdapter.MyViewHolder
                                                         int viewType) {
         // create a new view
         RelativeLayout v = (RelativeLayout) LayoutInflater.from(parent.getContext())
-                .inflate(R.layout.activity_quest, parent, false);
+                .inflate(R.layout.item_quest, parent, false);
         MyViewHolder vh = new MyViewHolder(v);
         vh.btn.setOnClickListener(QuestAdapter.this);
         vh.btn.setTag(vh);
