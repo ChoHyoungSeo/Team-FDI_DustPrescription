@@ -125,6 +125,6 @@
             android:layout_marginTop="20dp"
             android:background="@drawable/searchline"
             android:backgroundTint="#44ab6f"
-            android:text="메인으로 돌아가기" />
+            android:text="완료" />
     </LinearLayout>
 </LinearLayout>

@@ -26,9 +26,6 @@
             </intent-filter>
         </activity>
         <activity android:name=".MainActivity" />
-        <activity android:name=".Quiz1" />
-        <activity android:name=".Quiz2" />
-        <activity android:name=".Quiz3"></activity>
     </application>
 
 </manifest>

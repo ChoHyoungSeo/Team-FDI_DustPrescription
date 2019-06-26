@@ -8,13 +8,18 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MenuItem;
 
+import com.cookandroid.registration.Fragment.Frg_friend;
+import com.cookandroid.registration.Fragment.Frg_main;
+import com.cookandroid.registration.Fragment.Frg_prevention;
+import com.cookandroid.registration.Fragment.Frg_quiz1;
+
 public class MainActivity extends AppCompatActivity {
 
     private FragmentManager fragmentManager = getSupportFragmentManager();
     private Frg_main frg1 = new Frg_main();
     private Frg_friend frg2 = new Frg_friend();
     private Frg_prevention frg3 = new Frg_prevention();
-    private Frg_Quiz frg4 = new Frg_Quiz();
+    private Frg_quiz1 frg4 = new Frg_quiz1();
     private BottomNavigationView navi ;
 
     @Override
