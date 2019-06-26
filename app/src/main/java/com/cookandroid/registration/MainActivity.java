@@ -8,6 +8,11 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MenuItem;
 
+import com.cookandroid.registration.Fragment.Frg_friend;
+import com.cookandroid.registration.Fragment.Frg_main;
+import com.cookandroid.registration.Fragment.Frg_prevention;
+import com.cookandroid.registration.Fragment.Frg_quiz1;
+
 public class MainActivity extends AppCompatActivity {
 
     private FragmentManager fragmentManager = getSupportFragmentManager();

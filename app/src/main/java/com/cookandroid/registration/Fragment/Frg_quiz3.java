@@ -12,8 +12,6 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-
-import com.cookandroid.registration.Frg_quiz4;
 import com.cookandroid.registration.R;
 
 import java.text.SimpleDateFormat;

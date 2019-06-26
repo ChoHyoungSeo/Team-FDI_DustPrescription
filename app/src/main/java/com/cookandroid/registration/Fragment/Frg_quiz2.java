@@ -13,7 +13,6 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.cookandroid.registration.Frg_quiz3;
 import com.cookandroid.registration.R;
 
 import java.text.SimpleDateFormat;

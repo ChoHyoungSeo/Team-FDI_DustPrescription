@@ -11,6 +11,7 @@ import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
+import com.cookandroid.registration.Adapter.MissionAdapter;
 import com.cookandroid.registration.ApiParsing;
 import com.cookandroid.registration.Item;
 import com.cookandroid.registration.R;
