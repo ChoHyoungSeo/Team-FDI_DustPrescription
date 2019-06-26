@@ -37,7 +37,6 @@ public class Frg_quiz1 extends Fragment implements View.OnClickListener {
         x = v.findViewById(R.id.x);
         next = v.findViewById(R.id.next);
 
-<<<<<<< HEAD:app/src/main/java/com/cookandroid/registration/Frg_Quiz.java
         date.setText(getTime());
 
         o.setOnClickListener(new View.OnClickListener() {
