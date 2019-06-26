@@ -53,10 +53,10 @@ public class Frg_quiz3 extends Fragment {
             }
         });
 
-        next.setOnClickListener(this);
+        //next.setOnClickListener(this);
         return v;
     }
-    @Override
+    //@Override
     public void onClick(View v) {
         Frg_quiz3 frg3 = new Frg_quiz3();
         FragmentManager fragmentManager = getFragmentManager();
