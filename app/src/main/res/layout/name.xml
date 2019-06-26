@@ -2,26 +2,31 @@
 <RelativeLayout android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:android="http://schemas.android.com/apk/res/android">
-    <RelativeLayout android:layout_width="370dp"
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="340dp"
+        android:layout_height="630dp"
         android:layout_centerInParent="true"
-        android:layout_height="620dp"
-        android:background="@drawable/backgroundline"
-        xmlns:android="http://schemas.android.com/apk/res/android">
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/backgroundline">
+
         <TextView
             android:id="@+id/name"
-            android:textSize="40dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:text="이름"/>
+            android:layout_marginTop="200dp"
+            android:layout_centerHorizontal="true"
+            android:text="이름"
+            android:textSize="40dp" />
 
         <EditText
             android:id="@+id/Edittext_name"
-            android:layout_below="@id/name"
-            android:imeOptions="actionGo"
-            android:inputType="text"
-            android:layout_centerHorizontal="true"
             android:layout_width="150dp"
-            android:layout_height="60dp" />
+            android:layout_height="60dp"
+            android:layout_below="@id/name"
+            android:layout_centerHorizontal="true"
+            android:imeOptions="actionGo"
+            android:inputType="text" />
     </RelativeLayout>
 </RelativeLayout>

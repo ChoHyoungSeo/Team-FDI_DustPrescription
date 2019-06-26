@@ -46,7 +46,7 @@ public class Frg_prevention extends Fragment {
 
         switch (item.getPm10Grade()){
             case "1":
-                dataset.add("물 한잔의 여유를 즐기세요");
+                dataset.add("물 한잔 마시기");
                 dataset.add("과일을 섭취해주세요");
                 dataset.add("창문은 꼭 닫기");
                 dataset.add("먼지를 제거해주세요");
@@ -58,7 +58,7 @@ public class Frg_prevention extends Fragment {
                 icon.add(R.drawable.indoor);
                 break;
             case "2":
-                dataset.add("물 한잔의 여유를 즐기세요");
+                dataset.add("물 한잔 마시기");
                 dataset.add("과일을 섭취해주세요");
                 dataset.add("창문은 꼭 닫기");
                 dataset.add("먼지를 제거해주세요");
@@ -70,7 +70,7 @@ public class Frg_prevention extends Fragment {
                 icon.add(R.drawable.indoor);
                 break;
             case "3":
-                dataset.add("물 한잔의 여유를 즐기세요");
+                dataset.add("물 한잔 마시기");
                 dataset.add("과일을 섭취해주세요");
                 dataset.add("창문은 꼭 닫기");
                 dataset.add("먼지를 제거해주세요");
@@ -82,7 +82,7 @@ public class Frg_prevention extends Fragment {
                 icon.add(R.drawable.indoor);
                 break;
             case "4":
-                dataset.add("물 한잔의 여유를 즐기세요");
+                dataset.add("물 한잔 마시기");
                 dataset.add("과일을 섭취해주세요");
                 dataset.add("창문은 꼭 닫기");
                 dataset.add("먼지를 제거해주세요");

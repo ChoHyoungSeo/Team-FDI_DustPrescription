@@ -4,9 +4,9 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
     <RelativeLayout
         android:background="@drawable/backgroundline"
-        android:layout_width="370dp"
-        android:layout_centerInParent="true"
-        android:layout_height="610dp">
+        android:layout_width="340dp"
+        android:layout_height="630dp"
+        android:layout_centerInParent="true">
     <TextView
         android:id="@+id/name"
         android:textSize="20dp"
