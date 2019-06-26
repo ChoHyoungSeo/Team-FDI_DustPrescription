@@ -1,16 +1,16 @@
-package com.cookandroid.registration;
+package com.cookandroid.registration.Adapter;
 
 import android.content.Context;
-import android.media.Image;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.cookandroid.registration.R;
 
 import java.util.List;
 
@@ -35,7 +35,7 @@ public class QuestAdapter extends RecyclerView.Adapter<QuestAdapter.MyViewHolder
     }
 
     // Provide a suitable constructor (depends on the kind of dataset)
-    public QuestAdapter(List questString, List performnum, List icon_d,Context cont) {
+    public QuestAdapter(List questString, List performnum, List icon_d, Context cont) {
         quest_string = questString;
         quest_num = performnum;
         icon = icon_d;
@@ -44,7 +44,7 @@ public class QuestAdapter extends RecyclerView.Adapter<QuestAdapter.MyViewHolder
 
     @Override
     public QuestAdapter.MyViewHolder onCreateViewHolder(ViewGroup parent,
-                                                       int viewType) {
+                                                        int viewType) {
         // create a new view
         RelativeLayout v = (RelativeLayout) LayoutInflater.from(parent.getContext())
                 .inflate(R.layout.activity_quest, parent, false);
