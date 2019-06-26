@@ -29,13 +29,6 @@ public class Frg_prevention extends Fragment {
     private RecyclerView.LayoutManager layoutManager;
     private List<String> dataset;
     private List<Integer> icon;
-<<<<<<< HEAD
-    private int cnt = 0;
-
-=======
-    int cnt = 0 ;
-    TextView nameData;
->>>>>>> feature-Database
 
     @Nullable
     @Override
@@ -107,7 +100,6 @@ public class Frg_prevention extends Fragment {
             @Override
             public void onChanged() {
                 super.onChanged();
-                cnt+=1;
 
             }
         });
