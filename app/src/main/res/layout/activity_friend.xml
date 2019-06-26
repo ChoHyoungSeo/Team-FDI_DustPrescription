@@ -42,7 +42,6 @@
                 android:textSize="18dp"
                 android:text="검색"/>
         </LinearLayout>
-
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -51,17 +50,25 @@
             android:textStyle="bold"
             android:background="#44ab6f"/>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
             android:text="김민지"
+            android:background="#ffffff"
+            android:layout_gravity="left"
+            android:gravity="left"
             android:paddingLeft="10dp"
-            android:id="@+id/friend"/>
+            android:paddingTop="5dp"
+            android:id="@+id/friend01"/>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
             android:text="김유빈"
+            android:paddingTop="5dp"
+            android:background="#ffffff"
+            android:layout_gravity="left"
+            android:gravity="left"
             android:paddingLeft="10dp"
             android:id="@+id/friend02"/>
 
@@ -73,18 +80,25 @@
             android:textStyle="bold"
             android:background="#44ab6f"/>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
             android:text="안선영"
+            android:paddingTop="5dp"
+            android:background="#ffffff"
+            android:layout_gravity="left"
+            android:gravity="left"
             android:paddingLeft="10dp"
             android:id="@+id/friend03"/>
 
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
             android:text="이혜진"
+            android:layout_gravity="left"
+            android:gravity="left"
+            android:background="#ffffff"
+            android:paddingTop="5dp"
             android:paddingLeft="10dp"
             android:id="@+id/friend04"/>
 
@@ -96,10 +110,14 @@
             android:textStyle="bold"
             android:background="#44ab6f"/>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
             android:text="조형서"
+            android:layout_gravity="left"
+            android:gravity="left"
+            android:paddingTop="5dp"
+            android:background="#ffffff"
             android:paddingLeft="10dp"
             android:id="@+id/friend05"/>
     </LinearLayout>
