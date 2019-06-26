@@ -93,13 +93,7 @@ public class Frg_prevention extends Fragment {
         recyclerView.setLayoutManager(layoutManager);
 
         mAdapter = new QuestAdapter(dataset,icon,container.getContext());
-        mAdapter.registerAdapterDataObserver(new RecyclerView.AdapterDataObserver() {
-            @Override
-            public void onChanged() {
-                super.onChanged();
 
-            }
-        });
         recyclerView.setAdapter(mAdapter);
 
 
