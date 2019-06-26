@@ -21,6 +21,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:id="@+id/to_person"
                 android:hint="받는 사람: "
                 android:text=""
                 android:textColor="#999999"/>
@@ -33,7 +34,6 @@
                 android:layout_height="200dp"
                 android:background="@drawable/quizline"
                 android:layout_marginTop="10dp"
-                android:layout_padding
                 android:hint="오늘의 미세먼지는 나쁨이오니 마스크를 착용하시길 바랍니다~!"/>
             <Button
                 android:layout_width="wrap_content"
