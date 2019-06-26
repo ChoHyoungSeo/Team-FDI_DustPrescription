@@ -6,19 +6,16 @@ import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 
 import com.cookandroid.registration.Adapter.QuestAdapter;
 import com.cookandroid.registration.ApiParsing;
 import com.cookandroid.registration.Item;
 import com.cookandroid.registration.R;
 
-import java.io.FileInputStream;
-import java.io.IOException;
+
 import java.util.ArrayList;
 import java.util.List;
 
