@@ -34,11 +34,11 @@
                                   <option name="values">
                                     <map>
                                       <entry key="backgroundAssetType" value="COLOR" />
-                                      <entry key="backgroundColor" value="ffffff" />
-                                      <entry key="backgroundLayerName" value="ic_launcher_background_aa" />
+                                      <entry key="backgroundColor" value="44ab6f" />
+                                      <entry key="backgroundLayerName" value="ic_launcher_background_bb" />
                                       <entry key="foregroundImage" value="C:\Users\MINZY\Desktop\십자가.gif" />
-                                      <entry key="foregroundLayerName" value="ic_launcher_foreground_aa" />
-                                      <entry key="outputName" value="ic_launcher_aa" />
+                                      <entry key="foregroundLayerName" value="ic_launcher_foreground_bb" />
+                                      <entry key="outputName" value="ic_launcher_bb" />
                                     </map>
                                   </option>
                                 </PersistentState>
