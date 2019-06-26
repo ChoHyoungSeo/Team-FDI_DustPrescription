@@ -21,7 +21,7 @@ import java.util.Date;
 public class Frg_quiz2 extends Fragment implements View.OnClickListener {
     long today;
     Date mDate;
-    SimpleDateFormat mFormat = new SimpleDateFormat("mm-dd");
+    SimpleDateFormat mFormat = new SimpleDateFormat("MM"+"월 "+"dd"+"일");
     TextView date, quiz;
     LinearLayout quizAnsLayout;
     Button o, x, next;
@@ -37,7 +37,7 @@ public class Frg_quiz2 extends Fragment implements View.OnClickListener {
         x = v.findViewById(R.id.x);
         next = v.findViewById(R.id.next);
 
-        //quiz.setText();
+        date.setText(getTime());
 
         o.setOnClickListener(new View.OnClickListener() {
             @Override

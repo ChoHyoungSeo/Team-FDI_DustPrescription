@@ -16,15 +16,18 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 public class Frg_quiz1 extends Fragment implements View.OnClickListener {
     long today;
     Date mDate;
-    SimpleDateFormat mFormat = new SimpleDateFormat("mm-dd");
+    SimpleDateFormat mFormat = new SimpleDateFormat("MM"+"월 "+"dd"+"일");
     TextView date, quiz;
     LinearLayout quizAnsLayout;
     Button o, x, next;
+    private List<String[]> dataset;
 
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -36,6 +39,7 @@ public class Frg_quiz1 extends Fragment implements View.OnClickListener {
         o = v.findViewById(R.id.o);
         x = v.findViewById(R.id.x);
         next = v.findViewById(R.id.next);
+        dataset = new ArrayList<>();
 
         date.setText(getTime());
 
@@ -43,6 +47,7 @@ public class Frg_quiz1 extends Fragment implements View.OnClickListener {
             @Override
             public void onClick(View v) {
                 quizAnsLayout.setVisibility(View.VISIBLE);
+                dataset.add(new String[]{"0", "3", "오늘의 미세퀴즈를 3문제를 풀어보세요"});
             }
         });
 
@@ -50,6 +55,7 @@ public class Frg_quiz1 extends Fragment implements View.OnClickListener {
             @Override
             public void onClick(View v) {
                 quizAnsLayout.setVisibility(View.VISIBLE);
+                dataset.add(new String[]{"0", "3", "오늘의 미세퀴즈를 3문제를 풀어보세요"});
             }
         });
 
