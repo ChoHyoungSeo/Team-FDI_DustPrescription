@@ -34,21 +34,25 @@
             android:layout_gravity="center_horizontal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
-            <EditText
-                android:enabled="false"
-                android:id="@+id/textline"
+            <TextView
+                android:id="@+id/nameData"
                 android:layout_width="260dp"
-                android:layout_height="wrap_content"
-                />
+                android:layout_height="wrap_content" />
             <TextView
                 android:layout_marginTop="10dp"
                 android:layout_marginRight="5dp"
-                android:layout_alignRight="@+id/textline"
+                android:id="@+id/nameTo"
+                android:layout_alignRight="@+id/nameData"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="귀하"
                 android:textColor="#70000000"
                 android:textSize="18dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edge01"
+                android:layout_alignBottom="@+id/nameTo"/>
         </RelativeLayout>
         <android.support.v7.widget.RecyclerView
             android:id="@+id/quest_recyclerView"

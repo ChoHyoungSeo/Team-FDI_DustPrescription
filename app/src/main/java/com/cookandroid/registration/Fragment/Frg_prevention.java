@@ -4,18 +4,22 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.content.Context;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
-import com.cookandroid.registration.Adapter.MissionAdapter;
 import com.cookandroid.registration.Adapter.QuestAdapter;
 import com.cookandroid.registration.ApiParsing;
 import com.cookandroid.registration.Item;
 import com.cookandroid.registration.R;
 
+import java.io.FileInputStream;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -26,6 +30,7 @@ public class Frg_prevention extends Fragment {
     private RecyclerView.LayoutManager layoutManager;
     private List<String> dataset;
     private List<Integer> icon;
+    TextView nameData;
 
     @Nullable
     @Override
@@ -35,9 +40,20 @@ public class Frg_prevention extends Fragment {
         recyclerView = v.findViewById(R.id.quest_recyclerView);
         dataset = new ArrayList<>();
         icon = new ArrayList<>();
+        nameData = v.findViewById(R.id.nameData);
 
         ApiParsing ap = new ApiParsing();
         Item item = ap.Apiupdate();
+
+        try{
+            FileInputStream fis = getContext().openFileInput("name.txt");
+            byte[] buffer = new byte[fis.available()];
+            fis.read(buffer);
+            String readedtext = new String(buffer);
+            nameData.setText(readedtext);
+        } catch(IOException e){
+            Log.e("파일 읽어오기 실패:", e.getMessage());
+        }
 
         switch (item.getPm10Grade()){
             case "1":
