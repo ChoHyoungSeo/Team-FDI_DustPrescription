@@ -72,6 +72,7 @@ public class QuestAdapter extends RecyclerView.Adapter<QuestAdapter.MyViewHolder
             btn.setBackgroundResource(R.drawable.searchline1);
             btn.setEnabled(false);
             //퀘스트클릭시 객체 에드 해주기
+
             notifyDataSetChanged();
 
             Toast.makeText(con,"예방 완료!",Toast.LENGTH_SHORT).show();

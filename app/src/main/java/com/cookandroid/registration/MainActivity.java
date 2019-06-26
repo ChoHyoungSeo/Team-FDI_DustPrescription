@@ -39,16 +39,19 @@ public class MainActivity extends AppCompatActivity {
                 switch (menuItem.getItemId()) {
                     case R.id.main:
                         transaction.replace(R.id.context_view, frg1).commitAllowingStateLoss();
+                        transaction.addToBackStack(null);
                         break;
                     case R.id.friend:
                         transaction.replace(R.id.context_view,frg2).commitAllowingStateLoss();
+                        transaction.addToBackStack(null);
                         break;
                     case R.id.move:
                         transaction.replace(R.id.context_view,frg3).commitAllowingStateLoss();
+                        transaction.addToBackStack(null);
                         break;
                     case R.id.quiz:
                         transaction.replace(R.id.context_view,frg4).commitAllowingStateLoss();
-
+                        transaction.addToBackStack(null);
                 }
                 return true;
             }

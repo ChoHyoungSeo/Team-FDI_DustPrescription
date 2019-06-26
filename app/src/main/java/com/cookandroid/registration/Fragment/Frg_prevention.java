@@ -30,30 +30,19 @@ public class Frg_prevention extends Fragment {
     private RecyclerView.LayoutManager layoutManager;
     private List<String> dataset;
     private List<Integer> icon;
-    TextView nameData;
+    private int cnt = 0;
+
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.frg_prevention, container, false);
-
         recyclerView = v.findViewById(R.id.quest_recyclerView);
         dataset = new ArrayList<>();
         icon = new ArrayList<>();
-        nameData = v.findViewById(R.id.nameData);
 
         ApiParsing ap = new ApiParsing();
         Item item = ap.Apiupdate();
-
-        try{
-            FileInputStream fis = getContext().openFileInput("name.txt");
-            byte[] buffer = new byte[fis.available()];
-            fis.read(buffer);
-            String readedtext = new String(buffer);
-            nameData.setText(readedtext);
-        } catch(IOException e){
-            Log.e("파일 읽어오기 실패:", e.getMessage());
-        }
 
         switch (item.getPm10Grade()){
             case "1":
@@ -111,6 +100,7 @@ public class Frg_prevention extends Fragment {
 
         mAdapter = new QuestAdapter(dataset,icon,container.getContext());
         recyclerView.setAdapter(mAdapter);
+
 
         return v;
     }
