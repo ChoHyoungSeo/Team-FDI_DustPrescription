@@ -58,10 +58,10 @@ public class Frg_quiz3 extends Fragment {
     }
     //@Override
     public void onClick(View v) {
-        Frg_quiz3 frg3 = new Frg_quiz3();
+        Frg_quiz4 frg4 = new Frg_quiz4();
         FragmentManager fragmentManager = getFragmentManager();
         FragmentTransaction fragmentTransaction =        fragmentManager.beginTransaction();
-        fragmentTransaction.replace(R.id.container, frg3);
+        fragmentTransaction.replace(R.id.container, frg4);
         fragmentTransaction.addToBackStack(null);
         fragmentTransaction.commit();
     }
