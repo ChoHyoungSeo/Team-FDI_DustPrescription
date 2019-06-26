@@ -29,10 +29,6 @@ public class Frg_prevention extends Fragment {
     private RecyclerView.LayoutManager layoutManager;
     private List<String> dataset;
     private List<Integer> icon;
-<<<<<<< HEAD
-=======
-    TextView nameData;
->>>>>>> parent of c395bd8... firebase connection
 
     @Nullable
     @Override
@@ -100,16 +96,7 @@ public class Frg_prevention extends Fragment {
         recyclerView.setLayoutManager(layoutManager);
 
         mAdapter = new QuestAdapter(dataset,icon,container.getContext());
-<<<<<<< HEAD
-        mAdapter.registerAdapterDataObserver(new RecyclerView.AdapterDataObserver() {
-            @Override
-            public void onChanged() {
-                super.onChanged();
 
-            }
-        });
-=======
->>>>>>> parent of c395bd8... firebase connection
         recyclerView.setAdapter(mAdapter);
 
 
