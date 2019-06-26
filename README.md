@@ -33,12 +33,12 @@
 June 26th~27th, 2019
 MayField Hotel
 
-Prototyping, Design, Front-end, Back-end: KimMinJi, KimYooBin, AhnSeonYoung, LeeHyeJin, ChoHyoungSeo
+* Prototyping, Design, Front-end, Back-end: KimMinJi, KimYooBin, AhnSeonYoung, LeeHyeJin, ChoHyoungSeo
 
-Display representative: 
-sub-Display representative: 
+* Display representative: 
+* sub-Display representative: 
 
-Presentation representative:
+* Presentation representative:
 
 ## DustPrescription ![Version](https://img.shields.io/badge/Version-0.2.1-green.svg)
 An application that shows public/private recognition of Fine Dust, encourages people who involved in using this App to do some actions and realize how hazardous it is.
