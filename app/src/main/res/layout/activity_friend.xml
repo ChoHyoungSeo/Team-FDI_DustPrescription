@@ -20,7 +20,7 @@
             android:textStyle="bold"
             android:textColor="#44ab6f"/>
         <LinearLayout
-            android:layout_width="340dp"
+            android:layout_width="310dp"
             android:layout_height="30dp"
             android:background="@drawable/searchline"
             android:layout_marginTop="20dp"
