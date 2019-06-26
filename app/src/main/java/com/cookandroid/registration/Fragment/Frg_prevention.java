@@ -46,7 +46,7 @@ public class Frg_prevention extends Fragment {
         Item item = ap.Apiupdate();
 
         try{
-            FileInputStream fis = getContext().openFileInput("name.txt");
+            FileInputStream fis = container.getContext().openFileInput("name.txt");
             byte[] buffer = new byte[fis.available()];
             fis.read(buffer);
             String readedtext = new String(buffer);
