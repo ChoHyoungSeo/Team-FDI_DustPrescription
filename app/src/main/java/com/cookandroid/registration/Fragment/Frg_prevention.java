@@ -29,6 +29,7 @@ public class Frg_prevention extends Fragment {
     private RecyclerView.LayoutManager layoutManager;
     private List<String> dataset;
     private List<Integer> icon;
+    int cnt = 0 ;
     TextView nameData;
 
     @Nullable
@@ -109,6 +110,14 @@ public class Frg_prevention extends Fragment {
         recyclerView.setLayoutManager(layoutManager);
 
         mAdapter = new QuestAdapter(dataset,icon,container.getContext());
+        mAdapter.registerAdapterDataObserver(new RecyclerView.AdapterDataObserver() {
+            @Override
+            public void onChanged() {
+                super.onChanged();
+                cnt+=1;
+
+            }
+        });
         recyclerView.setAdapter(mAdapter);
 
         return v;
