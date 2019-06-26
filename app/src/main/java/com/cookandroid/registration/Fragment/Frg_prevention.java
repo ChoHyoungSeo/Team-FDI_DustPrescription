@@ -57,12 +57,12 @@ public class Frg_prevention extends Fragment {
 
         switch (item.getPm10Grade()){
             case "1":
-                dataset.add("물 한잔 마시기");
-                dataset.add("과일을 섭취해주세요");
-                dataset.add("창문은 꼭 닫기");
-                dataset.add("먼지를 제거해주세요");
-                dataset.add("되도록 외출은 삼가세요");
-                icon.add(R.drawable.water);
+                dataset.add("산책하기");
+                dataset.add("창문열어 환기하기");
+                dataset.add("적절한 유산소 운동하기");
+                dataset.add("먼지를 털어주세요");
+                dataset.add("맑은 공기를 즐기세요");
+                icon.add(R.drawable.walk);
                 icon.add(R.drawable.fruits);
                 icon.add(R.drawable.window);
                 icon.add(R.drawable.cleanner);
@@ -73,7 +73,7 @@ public class Frg_prevention extends Fragment {
                 dataset.add("과일을 섭취해주세요");
                 dataset.add("창문은 꼭 닫기");
                 dataset.add("먼지를 제거해주세요");
-                dataset.add("되도록 외출은 삼가세요");
+                dataset.add("장시간 외출은 삼가세요");
                 icon.add(R.drawable.water);
                 icon.add(R.drawable.fruits);
                 icon.add(R.drawable.window);
@@ -85,7 +85,7 @@ public class Frg_prevention extends Fragment {
                 dataset.add("과일을 섭취해주세요");
                 dataset.add("창문은 꼭 닫기");
                 dataset.add("먼지를 제거해주세요");
-                dataset.add("되도록 외출은 삼가세요");
+                dataset.add("가급적 외출은 삼가세요");
                 icon.add(R.drawable.water);
                 icon.add(R.drawable.fruits);
                 icon.add(R.drawable.window);
@@ -93,11 +93,11 @@ public class Frg_prevention extends Fragment {
                 icon.add(R.drawable.indoor);
                 break;
             case "4":
-                dataset.add("물 한잔 마시기");
+                dataset.add("물 2L 이상 마시기");
                 dataset.add("과일을 섭취해주세요");
                 dataset.add("창문은 꼭 닫기");
                 dataset.add("먼지를 제거해주세요");
-                dataset.add("되도록 외출은 삼가세요");
+                dataset.add("절대 외출 금지");
                 icon.add(R.drawable.water);
                 icon.add(R.drawable.fruits);
                 icon.add(R.drawable.window);
