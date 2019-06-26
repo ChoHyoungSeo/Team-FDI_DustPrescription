@@ -18,7 +18,7 @@ import android.widget.TextView;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-public class Frg_quiz3 extends Fragment {
+public class Frg_quiz3 extends Fragment implements View.OnClickListener {
     long today;
     Date mDate;
     SimpleDateFormat mFormat = new SimpleDateFormat("mm-dd");
@@ -53,14 +53,14 @@ public class Frg_quiz3 extends Fragment {
             }
         });
 
-        //next.setOnClickListener(this);
+        next.setOnClickListener(this);
         return v;
     }
     //@Override
     public void onClick(View v) {
         Frg_quiz4 frg4 = new Frg_quiz4();
         FragmentManager fragmentManager = getFragmentManager();
-        FragmentTransaction fragmentTransaction =        fragmentManager.beginTransaction();
+        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
         fragmentTransaction.replace(R.id.container, frg4);
         fragmentTransaction.addToBackStack(null);
         fragmentTransaction.commit();
