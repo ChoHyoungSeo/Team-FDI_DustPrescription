@@ -4,9 +4,9 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="370dp"
-        android:layout_height="620dp"
-        android:layout_alignParentTop="true"
+        android:layout_width="340dp"
+        android:layout_height="630dp"
+        android:layout_centerInParent="true"
         android:layout_centerHorizontal="true"
         android:background="@drawable/backgroundline">
 

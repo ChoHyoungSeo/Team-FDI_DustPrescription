@@ -3,9 +3,9 @@
     android:layout_height="match_parent"
     xmlns:android="http://schemas.android.com/apk/res/android">
     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="370dp"
-        android:layout_height="620dp"
-        android:layout_alignParentTop="true"
+        android:layout_width="340dp"
+        android:layout_height="630dp"
+        android:layout_centerInParent="true"
         android:layout_centerHorizontal="true"
         android:background="@drawable/backgroundline">
         <TextView
@@ -38,13 +38,5 @@
                 android:text="남자"
                 android:textSize="20dp"/>
         </RadioGroup>
-        <!--<Spinner-->
-            <!--android:layout_centerHorizontal="true"-->
-            <!--android:layout_below="@id/sex"-->
-            <!--android:id="@+id/select_sex"-->
-            <!--android:entries="@array/sex_selet"-->
-            <!--android:spinnerMode="dropdown"-->
-            <!--android:layout_width="wrap_content"-->
-            <!--android:layout_height="50dp"/>-->
     </RelativeLayout>
 </RelativeLayout>
