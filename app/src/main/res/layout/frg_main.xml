@@ -31,7 +31,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical"
-                    android:layout_marginLeft="5dp"
                     android:layout_weight="1">
                     <TextView
                         android:layout_width="wrap_content"
@@ -44,9 +43,10 @@
                         android:textSize="15dp"/>
                     <ProgressBar
                         android:layout_margin="10dp"
-                        android:layout_width="150dp"
+                        android:layout_width="135dp"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="20dp"
+                        android:max="100"
                         style="@android:style/Widget.ProgressBar.Horizontal"
                         android:id="@+id/dustbar" />
                     <TextView
@@ -59,8 +59,9 @@
                         android:textSize="15dp"/>
                     <ProgressBar
                         android:layout_margin="10dp"
-                        android:layout_width="150dp"
+                        android:layout_width="135dp"
                         android:layout_height="wrap_content"
+                        android:max="100"
                         style="@android:style/Widget.ProgressBar.Horizontal"
                         android:id="@+id/recogbar" />
                 </LinearLayout>

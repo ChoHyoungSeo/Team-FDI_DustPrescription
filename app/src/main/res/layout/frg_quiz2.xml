@@ -54,22 +54,22 @@
                 android:weightSum="2">
 
                 <Button
+                    android:id="@+id/o"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
                     android:layout_weight="1"
                     android:background="#00ff0000"
-                    android:id="@+id/o"
                     android:text="O"
                     android:textSize="15dp" />
 
                 <Button
+                    android:id="@+id/x"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
                     android:layout_weight="1"
                     android:background="#00ff0000"
-                    android:id="@+id/x"
                     android:text="X"
                     android:textSize="15dp" />
             </LinearLayout>
@@ -82,8 +82,8 @@
             android:layout_marginLeft="30dp"
             android:layout_marginTop="20dp"
             android:layout_marginBottom="20dp"
-            android:visibility="invisible"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:visibility="invisible">
 
             <TextView
                 android:id="@+id/quiz_ans"
@@ -118,11 +118,11 @@
         </LinearLayout>
 
         <Button
+            android:id="@+id/next"
             android:layout_width="120dp"
             android:layout_height="30dp"
-            android:id="@+id/next"
             android:layout_gravity="center"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="56.5dp"
             android:background="@drawable/searchline"
             android:backgroundTint="#44ab6f"
             android:text="다음 문제" />

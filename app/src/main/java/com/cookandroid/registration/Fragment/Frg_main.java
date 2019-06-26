@@ -44,7 +44,7 @@ public class Frg_main extends Fragment {
         recyclerView = view1.findViewById(R.id.recyclerview);
         dataset = new ArrayList<>();
 
-        dustbar.setProgress(Integer.parseInt(item.getPm10Grade()));
+        dustbar.setProgress(Integer.parseInt(item.getPm10Value()));
         recogbar.setProgress(20);
 
         switch (item.getPm10Grade()){

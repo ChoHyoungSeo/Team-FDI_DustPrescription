@@ -118,11 +118,11 @@
         </LinearLayout>
 
         <Button
+            android:id="@+id/next"
             android:layout_width="120dp"
             android:layout_height="30dp"
-            android:id="@+id/next"
             android:layout_gravity="center"
-            android:paddingEnd="5dp"
+            android:layout_marginTop="57dp"
             android:background="@drawable/searchline"
             android:backgroundTint="#44ab6f"
             android:text="완료" />
