@@ -14,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
     private Frg_main frg1 = new Frg_main();
     private Frg_friend frg2 = new Frg_friend();
     private Frg_prevention frg3 = new Frg_prevention();
-    private Frg_Quiz frg4 = new Frg_Quiz();
+    private Frg_quiz1 frg4 = new Frg_quiz1();
     private BottomNavigationView navi ;
 
     @Override
