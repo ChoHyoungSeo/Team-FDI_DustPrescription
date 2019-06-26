@@ -14,73 +14,64 @@ import com.cookandroid.registration.R;
 
 import java.util.List;
 
+
 public class QuestAdapter extends RecyclerView.Adapter<QuestAdapter.MyViewHolder> implements  View.OnClickListener{
-    private List<String> quest_string, quest_num;
-    private List<Integer> icon;
+    private List<String> quest_body;
+    private List<Integer> quest_icon;
     private  static Context con;
 
     public static class MyViewHolder extends RecyclerView.ViewHolder {
         // each data item is just a string in this case
-        public TextView quest_body, perform_num;
+        public TextView quest_body;
         public ImageView quest_icon;
         public RelativeLayout btn;
 
         public MyViewHolder(View v) {
             super(v);
             quest_body = v.findViewById(R.id.quest_body);
-            //perform_num = v.findViewById(R.id.perform_number);
-            quest_icon = v.findViewById(R.id.quest_img);
+            quest_icon = v.findViewById(R.id.quest_icon);
             btn = v.findViewById(R.id.btn_quest);
         }
     }
 
-    // Provide a suitable constructor (depends on the kind of dataset)
-    public QuestAdapter(List questString, List performnum, List icon_d, Context cont) {
-        quest_string = questString;
-        quest_num = performnum;
-        icon = icon_d;
+    public QuestAdapter(List item1, List item2, Context cont) {
+        quest_body = item1;
+        quest_icon = item2;
         con = cont;
     }
 
     @Override
-    public QuestAdapter.MyViewHolder onCreateViewHolder(ViewGroup parent,
+    public MyViewHolder onCreateViewHolder(ViewGroup parent,
                                                         int viewType) {
         // create a new view
         RelativeLayout v = (RelativeLayout) LayoutInflater.from(parent.getContext())
                 .inflate(R.layout.item_quest, parent, false);
         MyViewHolder vh = new MyViewHolder(v);
         vh.btn.setOnClickListener(QuestAdapter.this);
-        vh.btn.setTag(vh);
 
         return vh;
     }
 
     @Override
     public void onBindViewHolder(MyViewHolder holder, int position) {
-        // - get element from your dataset at this position
-        // - replace the contents of the view with that element
-        holder.quest_body.setText(quest_string.get(position));
-        holder.quest_icon.setImageResource(icon.get(position));
-        holder.perform_num.setText(quest_num.get(position));
+        holder.quest_body.setText(quest_body.get(position));
+        holder.quest_icon.setBackgroundResource(quest_icon.get(position));
         // 데이터셋 넘겨받아서 상황에 따라 바꿔주기
 
     }
 
     @Override
     public int getItemCount() {
-        return icon.size();
+        return quest_body.size();
     }
 
     @Override
     public void onClick(View v) {
-        MyViewHolder holder = (MyViewHolder)v.getTag();
-//        ProgressBar my_head = (ProgressBar)v.findViewById(R.id.my_head);
         if(v.getId() == R.id.btn_quest){
-//            my_head.incrementProgressBy(25);
-            quest_num.remove(holder.getAdapterPosition());
-            quest_string.remove(holder.getAdapterPosition());
-            icon.remove(holder.getAdapterPosition());
-
+            RelativeLayout btn = v.findViewById(R.id.btn_quest);
+            btn.setBackgroundResource(R.drawable.searchline1);
+            btn.setEnabled(false);
+            //퀘스트클릭시 객체 에드 해주기
             notifyDataSetChanged();
 
             Toast.makeText(con,"퀘스트 완료!",Toast.LENGTH_SHORT).show();

@@ -1,26 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
-    android:padding="5dp"
-    android:layout_margin="8dp"
     android:id="@+id/btn_quest"
+    android:layout_marginBottom="10dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginLeft="20dp"
+    android:padding="5dp"
     android:clickable="true"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="@drawable/searchline"
     xmlns:android="http://schemas.android.com/apk/res/android">
     <ImageView
-        android:id="@+id/quest_img"
-        android:layout_marginLeft="7dp"
-        android:background="@drawable/water"
+        android:id="@+id/quest_icon"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/window"
         android:layout_width="60dp"
         android:layout_height="60dp" />
     <TextView
-        android:layout_centerVertical="true"
         android:id="@+id/quest_body"
+        android:layout_centerVertical="true"
         android:layout_marginLeft="70dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="물 한 잔의 여유를 즐기세요"
+        android:text="창문은 꼭 닫기"
         android:textColor="@android:color/black"
         android:textSize="20dp"/>
 </RelativeLayout>

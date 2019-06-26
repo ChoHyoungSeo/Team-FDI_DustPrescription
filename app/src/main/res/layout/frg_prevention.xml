@@ -35,6 +35,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
             <EditText
+                android:enabled="false"
                 android:id="@+id/textline"
                 android:layout_width="260dp"
                 android:layout_height="wrap_content"
@@ -49,128 +50,11 @@
                 android:textColor="#70000000"
                 android:textSize="18dp"/>
         </RelativeLayout>
-        <RelativeLayout
-            android:layout_marginBottom="10dp"
-            android:layout_marginRight="20dp"
-            android:layout_marginLeft="20dp"
-            android:padding="5dp"
-            android:clickable="true"
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/quest_recyclerView"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/searchline"
-            xmlns:android="http://schemas.android.com/apk/res/android">
-            <ImageView
-                android:layout_marginLeft="7dp"
-                android:background="@drawable/water"
-                android:layout_width="60dp"
-                android:layout_height="60dp" />
-            <TextView
-                android:layout_centerVertical="true"
-                android:layout_marginLeft="70dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="물 한 잔의 여유를 즐기세요"
-                android:textColor="@android:color/black"
-                android:textSize="20dp"/>
-        </RelativeLayout>
-        <RelativeLayout
-            android:layout_marginBottom="10dp"
-            android:layout_marginRight="20dp"
-            android:layout_marginLeft="20dp"
-            android:padding="5dp"
-            android:clickable="true"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/searchline"
-            xmlns:android="http://schemas.android.com/apk/res/android">
-            <ImageView
-                android:layout_marginLeft="7dp"
-                android:background="@drawable/fruits"
-                android:layout_width="60dp"
-                android:layout_height="60dp" />
-            <TextView
-                android:layout_centerVertical="true"
-                android:layout_marginLeft="70dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="미세먼지 해독으로 과일 어떠세요?"
-                android:textColor="@android:color/black"
-                android:textSize="20dp"/>
-        </RelativeLayout>
-        <RelativeLayout
-            android:layout_marginBottom="10dp"
-            android:layout_marginRight="20dp"
-            android:layout_marginLeft="20dp"
-            android:padding="5dp"
-            android:clickable="true"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/searchline"
-            xmlns:android="http://schemas.android.com/apk/res/android">
-            <ImageView
-                android:layout_marginLeft="5dp"
-                android:background="@drawable/window"
-                android:layout_width="60dp"
-                android:layout_height="60dp" />
-            <TextView
-                android:layout_centerVertical="true"
-                android:layout_marginLeft="70dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="창문은 꼭 닫기"
-                android:textColor="@android:color/black"
-                android:textSize="20dp"/>
-        </RelativeLayout>
-        <RelativeLayout
-            android:layout_marginBottom="10dp"
-            android:layout_marginRight="20dp"
-            android:layout_marginLeft="20dp"
-            android:padding="5dp"
-            android:clickable="true"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/searchline"
-            xmlns:android="http://schemas.android.com/apk/res/android">
-            <ImageView
-                android:layout_marginTop="5dp"
-                android:layout_marginBottom="5dp"
-                android:layout_marginLeft="7dp"
-                android:background="@drawable/cleanner"
-                android:layout_width="60dp"
-                android:layout_height="50dp" />
-            <TextView
-                android:layout_centerVertical="true"
-                android:layout_marginLeft="70dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text=" 먼지를 제거해주세요"
-                android:textColor="@android:color/black"
-                android:textSize="20dp"/>
-        </RelativeLayout>
-        <RelativeLayout
-            android:layout_marginBottom="10dp"
-            android:layout_marginRight="20dp"
-            android:layout_marginLeft="20dp"
-            android:padding="5dp"
-            android:id="@+id/btn_quest"
-            android:clickable="true"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/searchline"
-            xmlns:android="http://schemas.android.com/apk/res/android">
-            <ImageView
-                android:layout_marginLeft="7dp"
-                android:background="@drawable/indoor"
-                android:layout_width="60dp"
-                android:layout_height="60dp" />
-            <TextView
-                android:layout_centerVertical="true"
-                android:layout_marginLeft="70dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="되도록 외출은 삼가세요"
-                android:textColor="@android:color/black"
-                android:textSize="20dp"/>
-        </RelativeLayout>
+            android:layout_height="wrap_content">
+
+        </android.support.v7.widget.RecyclerView>
     </LinearLayout>
 </RelativeLayout>

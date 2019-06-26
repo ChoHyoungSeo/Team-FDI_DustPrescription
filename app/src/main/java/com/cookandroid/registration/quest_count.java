@@ -1,31 +1,16 @@
 package com.cookandroid.registration;
 
 public class quest_count {
-    String name;
-    String age;
-    String sex;
-
-    public String getName() {
-        return name;
+    String perform_num;
+    public void add(){
+        perform_num +=1;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public String getPerform_num() {
+        return perform_num;
     }
 
-    public String getAge() {
-        return age;
-    }
-
-    public void setAge(String age) {
-        this.age = age;
-    }
-
-    public String getSex() {
-        return sex;
-    }
-
-    public void setSex(String sex) {
-        this.sex = sex;
+    public void setPerform_num(String perform_num) {
+        this.perform_num = perform_num;
     }
 }
