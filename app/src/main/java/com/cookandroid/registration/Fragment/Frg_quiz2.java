@@ -67,7 +67,7 @@ public class Frg_quiz2 extends Fragment implements View.OnClickListener {
     public void onClick(View v) {
         Frg_quiz3 frg3 = new Frg_quiz3();
         FragmentManager fragmentManager = getFragmentManager();
-        FragmentTransaction fragmentTransaction =        fragmentManager.beginTransaction();
+        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
         fragmentTransaction.replace(R.id.context_view, frg3);
         fragmentTransaction.addToBackStack(null);
         fragmentTransaction.commit();
