@@ -1,5 +1,6 @@
 # Team-FDI_DustPrescription
-
+![badge](./app/src/main/res/drawable/badge.png)
+<br/>
 🌟Mobile Application Using Android Studio for PM Hackaton🌟
 <br/>
 ![AndroidStudio](https://img.shields.io/badge/AndroidStudio-JAVA-informational.svg)
