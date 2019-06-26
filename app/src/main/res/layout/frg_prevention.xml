@@ -41,7 +41,7 @@
                 android:layout_height="wrap_content" />
             <TextView
                 android:layout_marginTop="10dp"
-                android:layout_marginRight="40dp"
+                android:layout_marginRight="20dp"
                 android:id="@+id/nameTo"
                 android:layout_alignRight="@+id/nameData"
                 android:layout_width="wrap_content"
@@ -52,9 +52,9 @@
         </RelativeLayout>
         <LinearLayout
             android:layout_width="235dp"
-            android:layout_marginBottom="15dp"
+            android:layout_marginBottom="20dp"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="40dp">
+            android:layout_marginLeft="50dp">
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

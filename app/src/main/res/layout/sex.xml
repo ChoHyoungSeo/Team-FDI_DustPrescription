@@ -2,18 +2,20 @@
 <RelativeLayout android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:android="http://schemas.android.com/apk/res/android">
-    <RelativeLayout
-        android:background="@drawable/backgroundline"
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="370dp"
-        android:layout_centerInParent="true"
-        android:layout_height="610dp">
+        android:layout_height="620dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/backgroundline">
         <TextView
             android:id="@+id/sex"
-            android:textSize="40dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:text="성별"/>
+            android:layout_marginTop="200dp"
+            android:layout_centerHorizontal="true"
+            android:text="성별"
+            android:textSize="40dp" />
         <RadioGroup
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

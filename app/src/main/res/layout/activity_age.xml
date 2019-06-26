@@ -1,27 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
-    <RelativeLayout
-        android:background="@drawable/backgroundline"
-        android:layout_width="370dp"
-        android:layout_centerInParent="true"
-        android:layout_height="610dp">
-    <TextView
-        android:id="@+id/age"
-        android:textSize="42dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:text="나이"/>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <EditText
-        android:id="@+id/Edittext_age"
-        android:layout_below="@id/age"
-        android:imeOptions="actionGo"
-        android:inputType="number"
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="370dp"
+        android:layout_height="620dp"
+        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_width="150dp"
-        android:layout_height="60dp" />
+        android:background="@drawable/backgroundline">
+
+        <TextView
+            android:id="@+id/age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="200dp"
+            android:layout_centerHorizontal="true"
+            android:text="나이"
+            android:textSize="40dp" />
+
+        <EditText
+            android:id="@+id/Edittext_age"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:layout_below="@id/age"
+            android:layout_centerHorizontal="true"
+            android:imeOptions="actionGo"
+            android:inputType="text" />
     </RelativeLayout>
 </RelativeLayout>
