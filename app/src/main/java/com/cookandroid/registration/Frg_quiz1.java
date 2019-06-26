@@ -4,6 +4,8 @@ import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -16,7 +18,7 @@ import android.widget.TextView;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-public class Frg_Quiz extends Fragment {
+public class Frg_quiz1 extends Fragment implements View.OnClickListener {
     long today;
     Date mDate;
     SimpleDateFormat mFormat = new SimpleDateFormat("mm-dd");
@@ -24,7 +26,6 @@ public class Frg_Quiz extends Fragment {
     LinearLayout quizAnsLayout;
     Button o, x, next;
 
-    @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.activity_quiz1, container, false);
@@ -36,6 +37,7 @@ public class Frg_Quiz extends Fragment {
         x = v.findViewById(R.id.x);
         next = v.findViewById(R.id.next);
 
+<<<<<<< HEAD:app/src/main/java/com/cookandroid/registration/Frg_Quiz.java
         date.setText(getTime());
 
         o.setOnClickListener(new View.OnClickListener() {
@@ -52,19 +54,27 @@ public class Frg_Quiz extends Fragment {
             }
         });
 
-        next.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), Quiz2.class);
-                startActivity(intent);
-            }
-        });
+        next.setOnClickListener(this);
         return v;
     }
+
 
     private String getTime() {
         today = System.currentTimeMillis();
         mDate = new Date(today);
         return mFormat.format(mDate);
     }
+
+    @Override
+    public void onClick(View v) {
+        Frg_quiz2 frg2 = new Frg_quiz2();
+        FragmentManager fragmentManager = getFragmentManager();
+        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+        fragmentTransaction.replace(R.id.context_view, frg2);
+        fragmentTransaction.addToBackStack(null);
+        fragmentTransaction.commit();
+    }
 }
+
+
+
