@@ -36,7 +36,7 @@ public class Frg_Quiz extends Fragment {
         x = v.findViewById(R.id.x);
         next = v.findViewById(R.id.next);
 
-        //quiz.setText();
+        date.setText(getTime());
 
         o.setOnClickListener(new View.OnClickListener() {
             @Override
