@@ -30,7 +30,7 @@ public class Frg_friend extends Fragment {
             @Override
             public void onClick(View v) {
                 View dialogView = (View)View.inflate(container.getContext(),
-                        R.layout.frg_message,null);
+                        R.layout.frg_message1,null);
                 AlertDialog.Builder dlg = new AlertDialog.Builder(container.getContext());
                 dlg.setView(dialogView);
                 dlg.show();
@@ -40,7 +40,7 @@ public class Frg_friend extends Fragment {
             @Override
             public void onClick(View v) {
                 View dialogView = (View)View.inflate(container.getContext(),
-                        R.layout.frg_message,null);
+                        R.layout.frg_message2,null);
                 AlertDialog.Builder dlg = new AlertDialog.Builder(container.getContext());
                 dlg.setView(dialogView);
                 dlg.show();
@@ -51,7 +51,7 @@ public class Frg_friend extends Fragment {
             @Override
             public void onClick(View v) {
                 View dialogView = (View)View.inflate(container.getContext(),
-                        R.layout.frg_message,null);
+                        R.layout.frg_message3,null);
                 AlertDialog.Builder dlg = new AlertDialog.Builder(container.getContext());
                 dlg.setView(dialogView);
                 dlg.show();
@@ -62,7 +62,7 @@ public class Frg_friend extends Fragment {
             @Override
             public void onClick(View v) {
                 View dialogView = (View)View.inflate(container.getContext(),
-                        R.layout.frg_message,null);
+                        R.layout.frg_message4,null);
                 AlertDialog.Builder dlg = new AlertDialog.Builder(container.getContext());
                 dlg.setView(dialogView);
                 dlg.show();
@@ -73,7 +73,7 @@ public class Frg_friend extends Fragment {
             @Override
             public void onClick(View v) {
                 View dialogView = (View)View.inflate(container.getContext(),
-                        R.layout.frg_message,null);
+                        R.layout.frg_message5,null);
                 AlertDialog.Builder dlg = new AlertDialog.Builder(container.getContext());
                 dlg.setView(dialogView);
                 dlg.show();
