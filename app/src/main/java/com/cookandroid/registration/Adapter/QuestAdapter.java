@@ -57,7 +57,6 @@ public class QuestAdapter extends RecyclerView.Adapter<QuestAdapter.MyViewHolder
         holder.quest_body.setText(quest_body.get(position));
         holder.quest_icon.setBackgroundResource(quest_icon.get(position));
         // 데이터셋 넘겨받아서 상황에 따라 바꿔주기
-
     }
 
     @Override

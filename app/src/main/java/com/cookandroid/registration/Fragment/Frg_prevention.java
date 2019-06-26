@@ -4,7 +4,6 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
-import android.content.Context;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
@@ -30,8 +29,13 @@ public class Frg_prevention extends Fragment {
     private RecyclerView.LayoutManager layoutManager;
     private List<String> dataset;
     private List<Integer> icon;
+<<<<<<< HEAD
     private int cnt = 0;
 
+=======
+    int cnt = 0 ;
+    TextView nameData;
+>>>>>>> feature-Database
 
     @Nullable
     @Override
@@ -46,27 +50,27 @@ public class Frg_prevention extends Fragment {
 
         switch (item.getPm10Grade()){
             case "1":
-                dataset.add("물 한잔 마시기");
-                dataset.add("과일을 섭취해주세요");
-                dataset.add("창문은 꼭 닫기");
-                dataset.add("먼지를 제거해주세요");
-                dataset.add("되도록 외출은 삼가세요");
-                icon.add(R.drawable.water);
-                icon.add(R.drawable.fruits);
-                icon.add(R.drawable.window);
-                icon.add(R.drawable.cleanner);
-                icon.add(R.drawable.indoor);
+                dataset.add("산책하기");
+                dataset.add("창문열어 환기하기");
+                dataset.add("적절한 유산소 운동하기");
+                dataset.add("먼지를 털어주세요");
+                dataset.add("맑은 공기를 즐기세요");
+                icon.add(R.drawable.walk);
+                icon.add(R.drawable.loveisanopendoor);
+                icon.add(R.drawable.exercise);
+                icon.add(R.drawable.broom);
+                icon.add(R.drawable.cleanair);
                 break;
             case "2":
                 dataset.add("물 한잔 마시기");
                 dataset.add("과일을 섭취해주세요");
-                dataset.add("창문은 꼭 닫기");
+                dataset.add("적당한 환기");
                 dataset.add("먼지를 제거해주세요");
-                dataset.add("되도록 외출은 삼가세요");
+                dataset.add("장시간 외출은 삼가세요");
                 icon.add(R.drawable.water);
                 icon.add(R.drawable.fruits);
-                icon.add(R.drawable.window);
-                icon.add(R.drawable.cleanner);
+                icon.add(R.drawable.loveisanopendoor);
+                icon.add(R.drawable.broom);
                 icon.add(R.drawable.indoor);
                 break;
             case "3":
@@ -74,7 +78,7 @@ public class Frg_prevention extends Fragment {
                 dataset.add("과일을 섭취해주세요");
                 dataset.add("창문은 꼭 닫기");
                 dataset.add("먼지를 제거해주세요");
-                dataset.add("되도록 외출은 삼가세요");
+                dataset.add("가급적 외출은 삼가세요");
                 icon.add(R.drawable.water);
                 icon.add(R.drawable.fruits);
                 icon.add(R.drawable.window);
@@ -82,12 +86,12 @@ public class Frg_prevention extends Fragment {
                 icon.add(R.drawable.indoor);
                 break;
             case "4":
-                dataset.add("물 한잔 마시기");
+                dataset.add("물 2L 이상 마시기");
                 dataset.add("과일을 섭취해주세요");
                 dataset.add("창문은 꼭 닫기");
                 dataset.add("먼지를 제거해주세요");
-                dataset.add("되도록 외출은 삼가세요");
-                icon.add(R.drawable.water);
+                dataset.add("절대 외출 금지");
+                icon.add(R.drawable.lotwater);
                 icon.add(R.drawable.fruits);
                 icon.add(R.drawable.window);
                 icon.add(R.drawable.cleanner);
@@ -99,6 +103,14 @@ public class Frg_prevention extends Fragment {
         recyclerView.setLayoutManager(layoutManager);
 
         mAdapter = new QuestAdapter(dataset,icon,container.getContext());
+        mAdapter.registerAdapterDataObserver(new RecyclerView.AdapterDataObserver() {
+            @Override
+            public void onChanged() {
+                super.onChanged();
+                cnt+=1;
+
+            }
+        });
         recyclerView.setAdapter(mAdapter);
 
 
