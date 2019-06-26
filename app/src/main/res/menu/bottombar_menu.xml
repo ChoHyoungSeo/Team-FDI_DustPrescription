@@ -2,20 +2,25 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
+        android:icon="@drawable/home"
         android:id="@+id/main"
         android:title="미세먼지"
         android:orderInCategory="1"
     />
     <item
+        android:icon="@drawable/prevention"
         android:id="@+id/move"
         android:title="예방책"
         android:orderInCategory="2"
         />
-    <item android:id="@+id/quiz"
+    <item
+        android:icon="@drawable/quiz"
+        android:id="@+id/quiz"
         android:title="미세퀴즈"
         android:orderInCategory="3"
         />
     <item
+        android:icon="@drawable/friend"
         android:id="@+id/friend"
         android:title="친구창"
         android:orderInCategory="4"
