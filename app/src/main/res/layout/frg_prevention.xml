@@ -32,7 +32,6 @@
         </LinearLayout>
         <RelativeLayout
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
             <TextView
@@ -49,19 +48,12 @@
                 android:text="귀하"
                 android:textColor="#70000000"
                 android:textSize="18dp"/>
-        </RelativeLayout>
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginBottom="20dp">
             <TextView
-                android:layout_width="270dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/edge01"
-                android:layout_alignBottom="@+id/nameTo" />
-        </LinearLayout>
+                android:layout_alignBottom="@+id/nameTo"/>
+        </RelativeLayout>
         <android.support.v7.widget.RecyclerView
             android:id="@+id/quest_recyclerView"
             android:layout_width="match_parent"
