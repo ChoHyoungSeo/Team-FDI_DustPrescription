@@ -1,16 +1,14 @@
 package com.cookandroid.registration.Fragment;
 
+import android.app.AlertDialog;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.TextView;
 
 import com.cookandroid.registration.R;
 
@@ -19,7 +17,7 @@ public class Frg_friend extends Fragment {
 
     @Nullable
     @Override
-    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable final ViewGroup container, @Nullable Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.activity_friend, container, false);
 
         friend01 = v.findViewById(R.id.friend01);
@@ -31,56 +29,55 @@ public class Frg_friend extends Fragment {
         friend01.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Message frg_msg = new Message();
-                FragmentManager fragmentManager = getFragmentManager();
-                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-                fragmentTransaction.replace(R.id., frg_msg);
-                fragmentTransaction.addToBackStack(null);
-                fragmentTransaction.commit();
+                View dialogView = (View)View.inflate(container.getContext(),
+                        R.layout.frg_message,null);
+                AlertDialog.Builder dlg = new AlertDialog.Builder(container.getContext());
+                dlg.setView(dialogView);
+                dlg.show();
             }
         });
         friend02.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Message frg_msg = new Message();
-                FragmentManager fragmentManager = getFragmentManager();
-                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-                fragmentTransaction.replace(R.id., frg_msg);
-                fragmentTransaction.addToBackStack(null);
-                fragmentTransaction.commit();
+                View dialogView = (View)View.inflate(container.getContext(),
+                        R.layout.frg_message,null);
+                AlertDialog.Builder dlg = new AlertDialog.Builder(container.getContext());
+                dlg.setView(dialogView);
+                dlg.show();
+
             }
         });
         friend03.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Message frg_msg = new Message();
-                FragmentManager fragmentManager = getFragmentManager();
-                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-                fragmentTransaction.replace(R.id.friend_layout, frg_msg);
-                fragmentTransaction.addToBackStack(null);
-                fragmentTransaction.commit();
+                View dialogView = (View)View.inflate(container.getContext(),
+                        R.layout.frg_message,null);
+                AlertDialog.Builder dlg = new AlertDialog.Builder(container.getContext());
+                dlg.setView(dialogView);
+                dlg.show();
+
             }
         });
         friend04.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Message frg_msg = new Message();
-                FragmentManager fragmentManager = getFragmentManager();
-                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-                fragmentTransaction.replace(R.id.friend_layout, frg_msg);
-                fragmentTransaction.addToBackStack(null);
-                fragmentTransaction.commit();
+                View dialogView = (View)View.inflate(container.getContext(),
+                        R.layout.frg_message,null);
+                AlertDialog.Builder dlg = new AlertDialog.Builder(container.getContext());
+                dlg.setView(dialogView);
+                dlg.show();
+
             }
         });
         friend05.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Message frg_msg = new Message();
-                FragmentManager fragmentManager = getFragmentManager();
-                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-                fragmentTransaction.replace(R.id.friend_layout, frg_msg);
-                fragmentTransaction.addToBackStack(null);
-                fragmentTransaction.commit();
+                View dialogView = (View)View.inflate(container.getContext(),
+                        R.layout.frg_message,null);
+                AlertDialog.Builder dlg = new AlertDialog.Builder(container.getContext());
+                dlg.setView(dialogView);
+                dlg.show();
+
             }
         });
         return v;
