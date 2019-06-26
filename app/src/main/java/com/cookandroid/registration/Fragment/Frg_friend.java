@@ -11,6 +11,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.Toast;
 
 import com.cookandroid.registration.R;
 
@@ -35,6 +36,12 @@ public class Frg_friend extends Fragment {
                         R.layout.frg_message1,null);
                 AlertDialog.Builder dlg = new AlertDialog.Builder(container.getContext());
                 dlg.setView(dialogView);
+                dlg.setPositiveButton("보내기", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        Toast.makeText(getActivity(), "전송 완료", Toast.LENGTH_SHORT).show();
+                    }
+                });
                 dlg.show();
             }
         });
@@ -45,6 +52,12 @@ public class Frg_friend extends Fragment {
                         R.layout.frg_message2,null);
                 AlertDialog.Builder dlg = new AlertDialog.Builder(container.getContext());
                 dlg.setView(dialogView);
+                dlg.setPositiveButton("보내기", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        Toast.makeText(getActivity(), "전송 완료", Toast.LENGTH_SHORT).show();
+                    }
+                });
                 dlg.show();
 
             }
@@ -56,6 +69,12 @@ public class Frg_friend extends Fragment {
                         R.layout.frg_message3,null);
                 AlertDialog.Builder dlg = new AlertDialog.Builder(container.getContext());
                 dlg.setView(dialogView);
+                dlg.setPositiveButton("보내기", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        Toast.makeText(getActivity(), "전송 완료", Toast.LENGTH_SHORT).show();
+                    }
+                });
                 dlg.show();
 
             }
@@ -67,6 +86,12 @@ public class Frg_friend extends Fragment {
                         R.layout.frg_message4,null);
                 AlertDialog.Builder dlg = new AlertDialog.Builder(container.getContext());
                 dlg.setView(dialogView);
+                dlg.setPositiveButton("보내기", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        Toast.makeText(getActivity(), "전송 완료", Toast.LENGTH_SHORT).show();
+                    }
+                });
                 dlg.show();
 
             }
@@ -78,6 +103,12 @@ public class Frg_friend extends Fragment {
                         R.layout.frg_message5,null);
                 AlertDialog.Builder dlg = new AlertDialog.Builder(container.getContext());
                 dlg.setView(dialogView);
+                dlg.setPositiveButton("보내기", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        Toast.makeText(getActivity(), "전송 완료", Toast.LENGTH_SHORT).show();
+                    }
+                });
                 dlg.show();
 
             }

@@ -38,12 +38,4 @@
         android:paddingLeft="5dp"
         android:paddingRight="5dp"
         android:text="오늘의 미세먼지는 나쁨이오니 마스크를 착용하시길 바랍니다~!"/>
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#4ab66f"
-        android:text="보내기"
-        android:textColor="#000000"
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="70dp" />
 </LinearLayout>
