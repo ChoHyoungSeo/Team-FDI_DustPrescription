@@ -35,6 +35,8 @@
 * DEVELOP: KimYooBin, ChoHyoungSeo, LeeHyeJin
 
 ## Final 본선진출
+yet processing...
+
 June 26th~27th, 2019
 MayField Hotel
 
