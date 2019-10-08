@@ -13,7 +13,7 @@
 ## Members
 * KimMinJi
 * KimYooBin
-* AhnSeonYoung
+* AhnSunYoung
 * LeeHyeJin
 * ChoHyoungSeo
 
@@ -21,16 +21,16 @@
 ## Building Role 1 
 * PM: ChoHyoungSeo
 
-* PLAN: KimMinJi, KimYooBin, AhnSeonYoung, LeeHyeJin, ChoHyoungSeo
+* PLAN: KimMinJi, KimYooBin, AhnSunYoung, LeeHyeJin, ChoHyoungSeo
 
-* Design: KimMinJi, KimYooBin, AhnSeonYoung, LeeHyeJin, ChoHyoungSeo
+* Design: KimMinJi, KimYooBin, AhnSunYoung, LeeHyeJin, ChoHyoungSeo
 
-* FRONT-END: KimMinJi, AhnSeonYoung, LeeHyeJin
+* FRONT-END: KimMinJi, AhnSunYoung, LeeHyeJin
 
 * BACK-END: KimYooBin, ChoHyoungSeo
 
 ## Building Role 2
-* PROTOTYPING: KimMinJi, AhnSeonYoung
+* PROTOTYPING: KimMinJi, AhnSunYoung
 
 * DEVELOP: KimYooBin, ChoHyoungSeo, LeeHyeJin
 
@@ -40,7 +40,7 @@ yet processing...
 June 26th~27th, 2019
 MayField Hotel
 
-* Prototyping, Design, Front-end, Back-end: KimMinJi, KimYooBin, AhnSeonYoung, LeeHyeJin, ChoHyoungSeo
+* Prototyping, Design, Front-end, Back-end: KimMinJi, KimYooBin, AhnSunYoung, LeeHyeJin, ChoHyoungSeo
 
 * Display representative: 
 * sub-Display representative: 
