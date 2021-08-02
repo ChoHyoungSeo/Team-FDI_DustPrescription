@@ -1,5 +1,5 @@
 # 2019 미세먼지 해커톤 장려상 수상작
-* won the 4th prize(PM Hackathon)
+* won the prize(PM Hackathon)
 * Host: Seoul - Capital of Korea(Republic of.)
 * Sponsor: SIT - Seoul Institute of Technology - National Organization of Korea(Republic of.)
 # Team-FDI_DustPrescription
